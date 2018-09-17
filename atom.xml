@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-09-15T06:28:13.268Z</updated>
+  <updated>2018-09-17T11:28:56.409Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>the frist eassy</title>
+    <link href="http://zhaofandong.github.io/2018/09/17/the-frist-eassy/"/>
+    <id>http://zhaofandong.github.io/2018/09/17/the-frist-eassy/</id>
+    <published>2018-09-17T11:27:37.000Z</published>
+    <updated>2018-09-17T11:28:56.409Z</updated>
+    
+    <content type="html"><![CDATA[<p>#<font face="微软雅黑">初次见面</font></p>  <font face="微软雅黑">从周日到目前为止，我开始搭建了博客，并且，正在用markdown写这手头的这篇日志。怎么说呢。有目标才会有进步吧。从半个月前，平哥初次展示了他的博客之后，当时便有这个想法，我也搭建一个我的博客，于是，有了sette’s page的诞生。但是，为什么花了半个月，因为我花了半天的时间看了一下需要的技术，果断的放弃了之后。反而在前天，闲着没事的时候，尝试的做了一下，花了两个小时，便搭建成功。<br>  也是蛮好笑的。自己一直无论什么事情都会去对别人说试一试，反而到自己这里却更容易胆怯。好在这一次。我成功了。<br>  关于这次的搭建，又可以参考很多的文献。所以，我也就不再做一篇教程关于如何搭建的。但是，还是要提一下，最后需要用到命令符来讲hexo放进一个新的文件夹里。并且 转换用 cd 。 对于我这个门外汉来说，其实也是需要一点的时间。<br>  好在，还是做出来了。<br>  大家好，我是Sette，一个学习编程的日语生。<br>  今后我的博客里大概会有我的日语学习过程以及编程的内容，请多多关照。<br></font>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#&lt;font face=&quot;微软雅黑&quot;&gt;初次见面&lt;/font&gt;&lt;/p&gt;
+  &lt;font face=&quot;微软雅黑&quot;&gt;从周日到目前为止，我开始搭建了博客，并且，正在用markdown写这手头的这篇日志。怎么说呢。有目标才会有进步吧。从半个月前，平哥初次展示了他的博客之后，当时便有这
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
