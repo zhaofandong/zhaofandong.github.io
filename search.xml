@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[今日关于搭建hexo博客的标签和分类的心得]]></title>
+    <url>%2F2018%2F09%2F19%2F%E4%BB%8A%E6%97%A5%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E7%9A%84%E5%BF%83%E5%BE%97%2F</url>
+    <content type="text"><![CDATA[今天忽然想到 如果每一篇文章发出来没有分类的话，看的人会看不到，因为生活的琐事很多不如来个分类或者来个标签。 关于分类，我猜想，应该是由hexo的主题模板来控制的。因为我添加了tags之后，每篇新生成的文章都会自带tags： 让我填。但是，我省成了 categories,却没有这个属性。观察了nextT 主题，发现原因应该就出现在这个母版页上。 还有就是哦 tags: 之后呢 一定要加一个- 不然会报错吼 日后，会想办法更改。 今天，也是很愉快的一天 :) 接下来几天要完成暑假遗留的电子院项目，就偶尔写一些啦。 晚安。 everyone. :)]]></content>
+      <tags>
+        <tag>-心得</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[添加tags和categories]]></title>
+    <url>%2F2018%2F09%2F19%2F%E6%B7%BB%E5%8A%A0tags%E5%92%8Ccategories%2F</url>
+    <content type="text"><![CDATA[现在正在学习如何给文章加上标签，并且考虑将文章分为大类。]]></content>
+      <tags>
+        <tag>&lt;font face=&quot;微软雅黑&quot;&gt; 学习&lt;/font&gt;</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[the frist eassy]]></title>
     <url>%2F2018%2F09%2F17%2Fthe-frist-eassy%2F</url>
     <content type="text"><![CDATA[#初次见面 从周日到目前为止，我开始搭建了博客，并且，正在用markdown写这手头的这篇日志。怎么说呢。有目标才会有进步吧。从半个月前，平哥初次展示了他的博客之后，当时便有这个想法，我也搭建一个我的博客，于是，有了sette’s page的诞生。但是，为什么花了半个月，因为我花了半天的时间看了一下需要的技术，果断的放弃了之后。反而在前天，闲着没事的时候，尝试的做了一下，花了两个小时，便搭建成功。 也是蛮好笑的。自己一直无论什么事情都会去对别人说试一试，反而到自己这里却更容易胆怯。好在这一次。我成功了。 关于这次的搭建，又可以参考很多的文献。所以，我也就不再做一篇教程关于如何搭建的。但是，还是要提一下，最后需要用到命令符来讲hexo放进一个新的文件夹里。并且 转换用 cd 。 对于我这个门外汉来说，其实也是需要一点的时间。 好在，还是做出来了。 大家好，我是Sette，一个学习编程的日语生。 今后我的博客里大概会有我的日语学习过程以及编程的内容，请多多关照。]]></content>
