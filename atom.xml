@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-09-20T12:35:28.263Z</updated>
+  <updated>2018-09-20T12:48:39.691Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://zhaofandong.github.io/2018/09/20/%E6%90%AD%E5%BB%BA%E8%AF%84%E8%AE%BA%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E5%BF%83%E5%BE%97/"/>
     <id>http://zhaofandong.github.io/2018/09/20/搭建评论出现的问题以及心得/</id>
     <published>2018-09-20T12:17:45.000Z</published>
-    <updated>2018-09-20T12:35:28.263Z</updated>
+    <updated>2018-09-20T12:48:39.691Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="nbsp-nbsp-首先，先甩出Valine的官方传送门：https-valine-js-org-quickstart-html；一切的源头都在这。也会有很多主题的解决方法在这。"><a href="#nbsp-nbsp-首先，先甩出Valine的官方传送门：https-valine-js-org-quickstart-html；一切的源头都在这。也会有很多主题的解决方法在这。" class="headerlink" title="  &nbsp;&nbsp;首先，先甩出Valine的官方传送门：https://valine.js.org/quickstart.html；一切的源头都在这。也会有很多主题的解决方法在这。"></a>  &nbsp;&nbsp;<font face="微软雅黑">首先，先甩出Valine的官方传送门：<a href="https://valine.js.org/quickstart.html；一切的源头都在这。也会有很多主题的解决方法在这。" target="_blank" rel="noopener">https://valine.js.org/quickstart.html；一切的源头都在这。也会有很多主题的解决方法在这。</a></font></h2><p>   &nbsp;&nbsp;之前我用的主题是一个AL开头的一个，叫什么名字我也忘了。然后呢，我想在我的博客下面加入评论的插件，但是根据网络上Valine的教程并没有什么很好的解决方法。于是我再官网之中找到了方法，按照他的要求修改配置文件并且更改了脚本。但是，不知道大家有没有发现，再官网下来的脚本并不是js结尾而是pug作为后缀。然后，我的脚本改错了。（十分委屈╥﹏╥…）<br>   &nbsp;&nbsp;于是就乘着这次机会干脆直接换一个主题，建议用next。当然也强烈建议在GitHub上面下载。<a href="https://github.com/iissnan/hexo-theme-next。为什么建议这样做呢？因为下面的方法操作都是最根本最基础的，虽然全都是英文注释。" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next。为什么建议这样做呢？因为下面的方法操作都是最根本最基础的，虽然全都是英文注释。</a><br>   下来之后，再按照网上普遍的Valine教程和leanCloud就可以完成搭建。</p><p>###&nbsp;&nbsp;事实证明，选对一个模板会少有很多搭建的问题，建议大家先从next开始‘<br>&nbsp;&nbsp;今天就到这里了。也做好项目的tureMore部分，明天再是另一个界面。也许能好好的过这个中秋节了。</p><p>####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晚安 ：）<br></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="nbsp-nbsp-首先，先甩出Valine的官方传送门：-Valine官网-一切的源头都在这。也会有很多主题的解决方法在这。"><a href="#nbsp-nbsp-首先，先甩出Valine的官方传送门：-Valine官网-一切的源头都在这。也会有很多主题的解决方法在这。" class="headerlink" title="  &nbsp;&nbsp;首先，先甩出Valine的官方传送门：[Valine官网]一切的源头都在这。也会有很多主题的解决方法在这。"></a>  &nbsp;&nbsp;<font face="微软雅黑">首先，先甩出Valine的官方传送门：[Valine官网]一切的源头都在这。也会有很多主题的解决方法在这。</font></h2><p>   &nbsp;&nbsp;之前我用的主题是一个AL开头的一个，叫什么名字我也忘了。然后呢，我想在我的博客下面加入评论的插件，但是根据网络上Valine的教程并没有什么很好的解决方法。于是我再官网之中找到了方法，按照他的要求修改配置文件并且更改了脚本。但是，不知道大家有没有发现，再官网下来的脚本并不是js结尾而是pug作为后缀。然后，我的脚本改错了。（十分委屈╥﹏╥…）<br>   &nbsp;&nbsp;于是就乘着这次机会干脆直接换一个主题，建议用next。当然也强烈建议在GitHub上面下载。[Github上的Next主题]。为什么建议这样做呢？因为下面的方法操作都是最根本最基础的，虽然全都是英文注释。<br>   下来之后，再按照网上普遍的Valine教程和leanCloud就可以完成搭建。</p><p>###&nbsp;&nbsp;事实证明，选对一个模板会少有很多搭建的问题，建议大家先从next开始‘<br>&nbsp;&nbsp;今天就到这里了。也做好项目的tureMore部分，明天再是另一个界面。也许能好好的过这个中秋节了。   </p><font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晚安 ：）</font><br>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;nbsp-nbsp-首先，先甩出Valine的官方传送门：https-valine-js-org-quickstart-html；一切的源头都在这。也会有很多主题的解决方法在这。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-首先，先甩出Valine的官方传送门：ht
+        &lt;h2 id=&quot;nbsp-nbsp-首先，先甩出Valine的官方传送门：-Valine官网-一切的源头都在这。也会有很多主题的解决方法在这。&quot;&gt;&lt;a href=&quot;#nbsp-nbsp-首先，先甩出Valine的官方传送门：-Valine官网-一切的源头都在这。也会有很多主题的解
       
     
     </summary>
