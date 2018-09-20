@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[搭建评论出现的问题以及心得]]></title>
+    <url>%2F2018%2F09%2F20%2F%E6%90%AD%E5%BB%BA%E8%AF%84%E8%AE%BA%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98%E4%BB%A5%E5%8F%8A%E5%BF%83%E5%BE%97%2F</url>
+    <content type="text"><![CDATA[&nbsp;&nbsp;首先，先甩出Valine的官方传送门：https://valine.js.org/quickstart.html；一切的源头都在这。也会有很多主题的解决方法在这。 &nbsp;&nbsp;之前我用的主题是一个AL开头的一个，叫什么名字我也忘了。然后呢，我想在我的博客下面加入评论的插件，但是根据网络上Valine的教程并没有什么很好的解决方法。于是我再官网之中找到了方法，按照他的要求修改配置文件并且更改了脚本。但是，不知道大家有没有发现，再官网下来的脚本并不是js结尾而是pug作为后缀。然后，我的脚本改错了。（十分委屈╥﹏╥…） &nbsp;&nbsp;于是就乘着这次机会干脆直接换一个主题，建议用next。当然也强烈建议在GitHub上面下载。https://github.com/iissnan/hexo-theme-next。为什么建议这样做呢？因为下面的方法操作都是最根本最基础的，虽然全都是英文注释。 下来之后，再按照网上普遍的Valine教程和leanCloud就可以完成搭建。 ###&nbsp;&nbsp;事实证明，选对一个模板会少有很多搭建的问题，建议大家先从next开始‘&nbsp;&nbsp;今天就到这里了。也做好项目的tureMore部分，明天再是另一个界面。也许能好好的过这个中秋节了。 ####&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;晚安 ：）]]></content>
+      <tags>
+        <tag>-心得</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[今日关于搭建hexo博客的标签和分类的心得]]></title>
     <url>%2F2018%2F09%2F19%2F%E4%BB%8A%E6%97%A5%E5%85%B3%E4%BA%8E%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E7%9A%84%E5%BF%83%E5%BE%97%2F</url>
     <content type="text"><![CDATA[今天忽然想到 如果每一篇文章发出来没有分类的话，看的人会看不到，因为生活的琐事很多不如来个分类或者来个标签。 关于分类，我猜想，应该是由hexo的主题模板来控制的。因为我添加了tags之后，每篇新生成的文章都会自带tags： 让我填。但是，我省成了 categories,却没有这个属性。观察了nextT 主题，发现原因应该就出现在这个母版页上。 还有就是哦 tags: 之后呢 一定要加一个- 不然会报错吼 日后，会想办法更改。 今天，也是很愉快的一天 :) 接下来几天要完成暑假遗留的电子院项目，就偶尔写一些啦。 晚安。 everyone. :)]]></content>
