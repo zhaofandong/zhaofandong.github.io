@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[10/17 学习日志]]></title>
+    <url>%2F2018%2F10%2F17%2F10-17-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"><![CDATA[html5 尚硅谷系列视频网页有三部分组成：w3c标准结构 表现 行为html css javascript结构用于描述页面的结构css控制页面的元素的样式javascript用于响应用户操作W2SSchool离线手册 html标签列表 &lt;!DOTYPE html&gt; 这是一个声明html5的 格式 不然浏览器会进入怪异模式 无法进行解析 完整的标签被成为元素 几进制就是满几进一 在中文系统中 默认都是使用GB2312 在html中，一些如&lt;&gt;这种特殊的字符是不能直接使用的 需要使用一些特殊的符号来表示这些特殊的字符，这些特殊符号我们称之位实体&lt;转义字符串&gt; 刘景澜琪解析到实体是，会自动将实体转换器对应的字符 实体的语法：12345&amp;实体的名字;&lt; &amp;lt;&gt; &amp;gt;空格 &amp;nbsp;版权符号 &amp;copy;]]></content>
+      <categories>
+        <category>-学习</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[10/16 学习日志 bootstrap4初步学习]]></title>
     <url>%2F2018%2F10%2F16%2F10-16-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97-bootstrap4%E5%88%9D%E6%AD%A5%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[今天的学习有点尴尬，准备学习bootstrap4。但是在视频中可以直接通过控制div class text-center 来控制文本位置，但是源文件和我的操作不成功。准备重新开始学习。html5和css了。今天下载了layui和 bt4的包。一个星期内准备看完视频。]]></content>

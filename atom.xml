@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-10-16T13:54:44.420Z</updated>
+  <updated>2018-10-17T13:42:08.014Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>10/17 学习日志 </title>
+    <link href="http://zhaofandong.github.io/2018/10/17/10-17-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/10/17/10-17-学习日志/</id>
+    <published>2018-10-17T13:41:00.000Z</published>
+    <updated>2018-10-17T13:42:08.014Z</updated>
+    
+    <content type="html"><![CDATA[<p>html5 尚硅谷系列视频<br>网页有三部分组成：w3c标准<br>结构 表现 行为<br>html css javascript<br>结构用于描述页面的结构<br>css控制页面的元素的样式<br>javascript<br>用于响应用户操作<br>W2SSchool离线手册 html标签列表<br><!-- 属性 通过属性来设置标签如何处理标签中的内容 可以在开始标签中添加属性实际上就是名值对的结构 属性名=“属性值" 一个标签中可以同时设置多个属性，属性之间需要用空格隔开‘font 可循三个属性 color face size --><br> <font color="red"> </font><br> &lt;!DOTYPE html&gt;<br> 这是一个声明html5的 格式  不然浏览器会进入怪异模式 无法进行解析<br> 完整的标签被成为元素<br> 几进制就是满几进一</p><p> 在中文系统中 默认都是使用GB2312<br> 在html中，一些如&lt;&gt;这种特殊的字符是不能直接使用的<br> 需要使用一些特殊的符号来表示这些特殊的字符，这些特殊符号我们称之位实体&lt;转义字符串&gt;<br> 刘景澜琪解析到实体是，会自动将实体转换器对应的字符<br> 实体的语法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&amp;实体的名字;</span><br><span class="line">&lt; &amp;lt;</span><br><span class="line">&gt; &amp;gt;</span><br><span class="line">空格 &amp;nbsp;</span><br><span class="line">版权符号 &amp;copy;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;html5 尚硅谷系列视频&lt;br&gt;网页有三部分组成：w3c标准&lt;br&gt;结构 表现 行为&lt;br&gt;html css javascript&lt;br&gt;结构用于描述页面的结构&lt;br&gt;css控制页面的元素的样式&lt;br&gt;javascript&lt;br&gt;用于响应用户操作&lt;br&gt;W2SSchool
+      
+    
+    </summary>
+    
+      <category term="-学习" scheme="http://zhaofandong.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>10/16 学习日志 bootstrap4初步学习</title>
