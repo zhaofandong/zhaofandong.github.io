@@ -264,6 +264,175 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/11/04/11-4日学习日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sette">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sette's Page">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/04/11-4日学习日志/" itemprop="url">11-4日学习日志</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-04T20:09:41+08:00">
+                2018-11-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/04/11-4日学习日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/04/11-4日学习日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>ie6 pngbug 恢复<br>ie6 对图片png24支持度不高 则会导致透明效果过无法正常显示<br>1.<br>在ps中 web所用格式  png-24 改为png-8  但是图片清晰度会有所下降<br>2.<br>用javascript 来解决该问题 需要像页面引入外部的一个javascript 文件<br>然后写一下简单的js代码 来处理该问题 后缀为js<br>不带Min的用在开发 min 用在生产 </p>
+<p>引入js 文件<br>在body标签的最后引入js文件</p>
+<script type="text/javascript" src="文件的路径 "> </script>
+在创建一个新的script标签 并且编写一些js代码
+<sctipt type="text/javascript">
+DD_belatedPNG.fix("div");
+
+
+<p>有一些情况，在特殊浏览器中需要执行，其他不需要执行，就用CSS HACK 代码</p>
+<p>条件HACk  条件hack只对IE浏览器有效，其他的浏览器都会将他识别为注释<br><!--[if IE 6]>
+<![endif]--></p>
+<p>属性 hack<br>在样式前面添加一个下划线，样式只有ie6一下的浏览器才可以识别到</p>
+<ul>
+<li><p>ie7 一下<br>\9 ie6  以上<br>\0 在样式后面加  只有ie8 及以上的才能够识别<br>CSS HACK 尽量不使用 </p>
+<p>选择器 hack  </p>
+<ul>
+<li>html  只有ie6 认识</li>
+</ul>
+<p>JavaScript 学习</p>
+<p>node.js  用来写服务器 </p>
+</li>
+</ul>
+<p>轻量级的编程语言<br>javascript 主要负责  ecmascript  dom  库 （API） bom<br>语法：<br>1.用字母 数字 特殊符号 组成的命令 </p>
+<ol start="2">
+<li>字母大小写 十分铭感</li>
+<li>行来区分 命令  在同一行 用;来区分命令<br>4.注释// 单行 /**/ 多行注释<br>5.输出<br>alert 弹窗 弹出警告床<br>console.log(); 在控制台中显示<br>cause now you strangle me in my sleep  and  i wake up with you  in my hand </li>
+</ol>
+<p>值<br>数字： 0 1 *1<br>小数 附属点：1.1111<br>字符串 ”dfsfdds“’1’<br>布尔值； true false<br>变量：<br>设x=1  x 就是变量 </p>
+<p>声明变量：<br>var x ;创建一个变量<br>x=”helloWorld” ; 给变量赋值</p>
+<p>var x= ; 同时 放在一起<br>多个变量<br>Var x,y,z ;<br>x=1;<br>y=1;<br>z=1;</p>
+<p>var x=1, y=2,x=3;<br>x 变量名<br>1.变量名 必须是字母和数字<br>2.变量的开始， 最好字母<br>3.变量的大小写敏感</p>
+<p>表达式：</p>
+<p>运算符<br>算术 +- <em>/%<br>顺序 从左往右 先 +</em> / % 后加减<br>括号提高优先<br>++ 自增 – 自减<br>++a 先自增<br>a++ 后自增<br>NAN不是　数字　</p>
+<p>比较　布尔值　<br>a=1&gt;2  false<br>== 值一样<br>===类和值</p>
+<p>逻辑<br>&amp;&amp; || ！ </p>
+<p>var a=1 ;<br>var b =”2”;<br>{}</p>
+<p>var a ={60,61,62 } 数组<br>a[0] 第一个 </p>
+<p>var a={“a1”:60,”a2”:61,”a3”:62}<br>a.a1 来访问<br>var a={0:60,1:61,2:62}<br>a[0];</p>
+<p>如果对象时空<br>var a =null;</p>
+<p>数据转换：<br>var a = “111”;<br>var b =Number(a );</p>
+</sctipt>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/11/03/11-3-学习日志/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1651,182 +1820,6 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/15/10-15-学习日志/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sette">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sette's Page">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/15/10-15-学习日志/" itemprop="url">10/15 学习日志</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-15T22:05:24+08:00">
-                2018-10-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习/" itemprop="url" rel="index">
-                    <span itemprop="name">-学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/15/10-15-学习日志/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/15/10-15-学习日志/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>  最近比较忙，事件匆忙，快速记录最近学到的东西。<br>  首先是今天刚刚遇到的，如何取消鼠标悬停效果，就是那个淡蓝色的东西，我相信很多人也会遇到。之前我选择会选择在blend中慢慢磨一个出来，因为18号之前要做完，所以，我快速的从网上抄了代码过来。<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;Style x:Key=&quot;NormalMouseButton&quot; TargetType=&quot;Button&quot;&gt;</span><br><span class="line">    &lt;Setter Property=&quot;OverridesDefaultStyle&quot; Value=&quot;True&quot; /&gt;</span><br><span class="line">    &lt;Setter Property=&quot;Cursor&quot; Value=&quot;Hand&quot; /&gt;</span><br><span class="line">    &lt;Setter Property=&quot;Template&quot;&gt;</span><br><span class="line">        &lt;Setter.Value&gt;</span><br><span class="line">            &lt;ControlTemplate TargetType=&quot;Button&quot;&gt;</span><br><span class="line">                &lt;Border Name=&quot;border&quot; BorderThickness=&quot;&#123;TemplateBinding BorderThickness&#125;&quot; BorderBrush=&quot;&#123;TemplateBinding BorderBrush&#125;&quot; Background=&quot;&#123;TemplateBinding Background&#125;&quot;&gt;</span><br><span class="line">                    &lt;ContentPresenter HorizontalAlignment=&quot;Center&quot; VerticalAlignment=&quot;Center&quot; /&gt;</span><br><span class="line">                &lt;/Border&gt;</span><br><span class="line">                &lt;ControlTemplate.Triggers&gt;</span><br><span class="line">                    &lt;Trigger Property=&quot;IsMouseOver&quot; Value=&quot;True&quot;&gt;</span><br><span class="line">                        &lt;Setter Property=&quot;Opacity&quot; Value=&quot;0.8&quot; /&gt;</span><br><span class="line">                    &lt;/Trigger&gt;</span><br><span class="line">                &lt;/ControlTemplate.Triggers&gt;</span><br><span class="line">            &lt;/ControlTemplate&gt;</span><br><span class="line">        &lt;/Setter.Value&gt;</span><br><span class="line">    &lt;/Setter&gt;</span><br><span class="line"> &lt;/Style&gt;</span><br></pre></td></tr></table></figure></p>
-<p> 将这一段代码放入windows.Resourses 中，之后再button中引用style，一定要特别注意，引用的时候要加上StasticResource.在之后的学习日志之后我会提到。<br>接下来我将补充我昨天晚上遇到的问题。<br>首先是如何再WPF显示网页（参考资料：<a href="https://blog.csdn.net/veechange/article/details/72764364和https://www.cnblogs.com/cela/p/5000262.html）" target="_blank" rel="noopener">https://blog.csdn.net/veechange/article/details/72764364和https://www.cnblogs.com/cela/p/5000262.html）</a><br> 我选择的方法直接再后台Grid引用Source new URI<br>第二个WPF中如何让TextBox中的文字实现垂直居中<br>（参考资料：<a href="https://bbs.csdn.net/topics/391049047）" target="_blank" rel="noopener">https://bbs.csdn.net/topics/391049047）</a><br>第三个WPF passwordbox 圆角制作<br>（参考资料：<a href="https://www.cnblogs.com/renzhendewo/archive/2013/06/28/3160416.html）" target="_blank" rel="noopener">https://www.cnblogs.com/renzhendewo/archive/2013/06/28/3160416.html）</a><br>将以下节点复制到app.xaml的&lt;Application.Resources&gt;节点下</p>
-<pre><code>&lt;Style TargetType=&quot;PasswordBox&quot;&gt;
-            &lt;Setter Property=&quot;Template&quot;&gt;
-                &lt;Setter.Value&gt;
-                    &lt;ControlTemplate TargetType=&quot;PasswordBox&quot;&gt;
-                        &lt;Grid&gt;
-                            &lt;Rectangle RadiusX=&quot;3&quot; RadiusY=&quot;3&quot; Fill=&quot;{TemplateBinding Background}&quot; Stroke=&quot;#7e94a9&quot;/&gt;
-                            &lt;ScrollViewer SnapsToDevicePixels=&quot;{TemplateBinding SnapsToDevicePixels}&quot; x:Name=&quot;PART_ContentHost&quot; Template=&quot;{DynamicResource ScrollViewerControlTemplate1}&quot;/&gt;
-                        &lt;/Grid&gt;
-                    &lt;/ControlTemplate&gt;
-                &lt;/Setter.Value&gt;
-            &lt;/Setter&gt;
-        &lt;/Style&gt;
-</code></pre><p>第四个WPF将TextBox的边框设为圆角<br>（参考资料：<a href="https://www.cnblogs.com/tommy-huang/p/6475791.html）" target="_blank" rel="noopener">https://www.cnblogs.com/tommy-huang/p/6475791.html）</a></p>
-<pre><code>&lt;TextBox&gt;
-
-     &lt;TextBox.Resources&gt;
-          &lt;Style TargetType=&quot;{x:Type Border}&quot;&gt;
-              &lt;Setter Property=&quot;CornerRadius&quot; Value=&quot;4&quot;/&gt;
-              &lt;Setter Property=&quot;BorderBrush&quot; Value=&quot;#c1d0dc&quot;/&gt;
-           &lt;/Style&gt;
-     &lt;/TextBox.Resources&gt;
-
-&lt;/TextBox&gt;
-</code></pre>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1877,7 +1870,7 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

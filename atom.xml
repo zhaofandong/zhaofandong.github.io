@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-11-03T13:48:11.423Z</updated>
+  <updated>2018-11-04T12:23:17.852Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>11-4日学习日志</title>
+    <link href="http://zhaofandong.github.io/2018/11/04/11-4%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/04/11-4日学习日志/</id>
+    <published>2018-11-04T12:09:41.000Z</published>
+    <updated>2018-11-04T12:23:17.852Z</updated>
+    
+    <content type="html"><![CDATA[<p>ie6 pngbug 恢复<br>ie6 对图片png24支持度不高 则会导致透明效果过无法正常显示<br>1.<br>在ps中 web所用格式  png-24 改为png-8  但是图片清晰度会有所下降<br>2.<br>用javascript 来解决该问题 需要像页面引入外部的一个javascript 文件<br>然后写一下简单的js代码 来处理该问题 后缀为js<br>不带Min的用在开发 min 用在生产 </p><p>引入js 文件<br>在body标签的最后引入js文件</p><script type="text/javascript" src="文件的路径 "> </script>在创建一个新的script标签 并且编写一些js代码<sctipt type="text/javascript">DD_belatedPNG.fix("div");<p>有一些情况，在特殊浏览器中需要执行，其他不需要执行，就用CSS HACK 代码</p><p>条件HACk  条件hack只对IE浏览器有效，其他的浏览器都会将他识别为注释<br><!--[if IE 6]><![endif]--></p><p>属性 hack<br>在样式前面添加一个下划线，样式只有ie6一下的浏览器才可以识别到</p><ul><li><p>ie7 一下<br>\9 ie6  以上<br>\0 在样式后面加  只有ie8 及以上的才能够识别<br>CSS HACK 尽量不使用 </p><p>选择器 hack  </p><ul><li>html  只有ie6 认识</li></ul><p>JavaScript 学习</p><p>node.js  用来写服务器 </p></li></ul><p>轻量级的编程语言<br>javascript 主要负责  ecmascript  dom  库 （API） bom<br>语法：<br>1.用字母 数字 特殊符号 组成的命令 </p><ol start="2"><li>字母大小写 十分铭感</li><li>行来区分 命令  在同一行 用;来区分命令<br>4.注释// 单行 /**/ 多行注释<br>5.输出<br>alert 弹窗 弹出警告床<br>console.log(); 在控制台中显示<br>cause now you strangle me in my sleep  and  i wake up with you  in my hand </li></ol><p>值<br>数字： 0 1 *1<br>小数 附属点：1.1111<br>字符串 ”dfsfdds“’1’<br>布尔值； true false<br>变量：<br>设x=1  x 就是变量 </p><p>声明变量：<br>var x ;创建一个变量<br>x=”helloWorld” ; 给变量赋值</p><p>var x= ; 同时 放在一起<br>多个变量<br>Var x,y,z ;<br>x=1;<br>y=1;<br>z=1;</p><p>var x=1, y=2,x=3;<br>x 变量名<br>1.变量名 必须是字母和数字<br>2.变量的开始， 最好字母<br>3.变量的大小写敏感</p><p>表达式：</p><p>运算符<br>算术 +- <em>/%<br>顺序 从左往右 先 +</em> / % 后加减<br>括号提高优先<br>++ 自增 – 自减<br>++a 先自增<br>a++ 后自增<br>NAN不是　数字　</p><p>比较　布尔值　<br>a=1&gt;2  false<br>== 值一样<br>===类和值</p><p>逻辑<br>&amp;&amp; || ！ </p><p>var a=1 ;<br>var b =”2”;<br>{}</p><p>var a ={60,61,62 } 数组<br>a[0] 第一个 </p><p>var a={“a1”:60,”a2”:61,”a3”:62}<br>a.a1 来访问<br>var a={0:60,1:61,2:62}<br>a[0];</p><p>如果对象时空<br>var a =null;</p><p>数据转换：<br>var a = “111”;<br>var b =Number(a );</p></sctipt>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;ie6 pngbug 恢复&lt;br&gt;ie6 对图片png24支持度不高 则会导致透明效果过无法正常显示&lt;br&gt;1.&lt;br&gt;在ps中 web所用格式  png-24 改为png-8  但是图片清晰度会有所下降&lt;br&gt;2.&lt;br&gt;用javascript 来解决该问题 需要像页面引
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>11-3 学习日志 </title>
