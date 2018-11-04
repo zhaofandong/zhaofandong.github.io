@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-10-31T14:18:37.728Z</updated>
+  <updated>2018-11-03T13:48:11.423Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>11-3 学习日志 </title>
+    <link href="http://zhaofandong.github.io/2018/11/03/11-3-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/03/11-3-学习日志/</id>
+    <published>2018-11-03T13:47:39.000Z</published>
+    <updated>2018-11-03T13:48:11.423Z</updated>
+    
+    <content type="html"><![CDATA[<p>border-collaspe<br>border-spacing<br> 如果设置了 border-collaspe border-spacing自动失效</p><p> th 表头的默认样式  </p><p> 隔行变色：<br> tr:nth-child(eve){background-color:…}<br> 移入变色：<br> tr:hover<br> {<br>   background-color…<br> }</p><p> ie8 不支持各行变色 </p><p> 长表格</p><p> 在某一些情况下 表格是非常的长的<br> 这时候就需要将表格分为三个部分，表头，表格的底部<br> html给我们提供了三个标签：<br> thead<br> tbody<br> tfood<br> <thead><br> <tr><br> <th></th><br> <th></th><br> </tr><br> </thead></p><p> thead 中的内容永远会显示在最上边 </p><p> 如果表格没有写tbody 浏览器会自动在表格中添加tbody<br> 并且将所有tr 放到tbody 中 </p><p> 表格布局<br> 以前更多的情况用表格来进行布局的 但是这种方式早已被css淘汰<br> 表格可以嵌套 在td里面再放一个表格 </p><p> 完善clearfix<br> 使用空的table可以蛤蜊附子元素的外边距，组织外边距的重合 </p><p> .box1:before{<br> display:table;<br> content=””;<br> }</p><p> .clearfix:after{<br> content:””<br> display:block;<br> clear:both;<br> }</p><p> 经过修改后的clearfix 是一个多功能的<br> .clearfix:before,<br> .clearfix:after{<br> content:””;<br> display:table;<br> clear:both;<br> }</p><p>表单<br>表单的作用就是用来将用户信息提交给服务器的，比如：百度的搜索框 注册 登入 这些操作都需要填写表单<br> 使用form标签创建一个表单 form标签中必须制定一个action属性<br> 该属性指向的是一个服务器地址 当我们提交表单会提交到action属性对应的地址<br> <form action=""><br> 使用form的仅仅是一个空白的表单，我们还需要向form添加不同的表单项 如果希望表单中的数据会提交到服务器中 还需要给表单制定一个name属性<br> 使用input来创建一个文本框 他的tyoe属性是text<br> <label for="um"> 用户名 </label><br> <input id="um" type="text" name="username"> name表示提交内容的名字<br> <input type="password" name="password"><br> <input type="submit" name=""> 提交按钮  再提交按钮中 通过value中 修改按钮的文字<br> 单选按钮通过name属性进行分组 name 属性相同的是一组按钮<br> 像这种需要用户选择但是不需要用户填写内容的表单项 还必须指定一个value属性<br> 这样被选中的表单想的value属性将最后提供给服务器<br> <input type="radio" name="gender" value="male"> 男<br> <input type="radio" name="gender" value="female" checked="checked"> 女<br> 多选框<br> <input type="checkbox" name="hobby" value="soccer" checked="checked">足球<br>  &lt;input type=”checkbox” name=”hobby” value=”bkb”checked=”checked”/&gt;篮球<br>   <input type="checkbox" name="hobby" value="btmt">羽毛球<br>  下来列表：使用select </form></p><select name="" multiple="multiple">  变成可多选<br><!--在下拉列表中使用option标签来创建一个一个列表项--><br><optgroup label="男明星"><option value="">a </option><br><option>b </option><br></optgroup><br><option value=""></option><option>b </option><br><br><option>c </option><br><br></select>  <p> </p><p> 查询字符串的形式发送欸我们的服务器<br> 属性名=属性值<br> <textarea name="info"></textarea> 长文本框<br> <input type="rest"></p><input type="button"> <p> 除了使用input 也可以使用button标签来创建按钮<br> <button type="submit"> </button> 更加灵活 </p><p> 表单提示文字<br> <label for=""> 标签 </label> 该属性值需要制定一个表单项的id值 </p><p> <fieldset>  对表单项进行分组<br> 可以讲表单项目的同一组放大器哦一个filedset里面 </fieldset></p><legend> 分组的名称</legend>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;border-collaspe&lt;br&gt;border-spacing&lt;br&gt; 如果设置了 border-collaspe border-spacing自动失效&lt;/p&gt;
+&lt;p&gt; th 表头的默认样式  &lt;/p&gt;
+&lt;p&gt; 隔行变色：&lt;br&gt; tr:nth-child(eve){b
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>11-1日和2日的 学习日志大礼包</title>
+    <link href="http://zhaofandong.github.io/2018/11/02/11-1%E6%97%A5%E5%92%8C2%E6%97%A5%E7%9A%84-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%E5%A4%A7%E7%A4%BC%E5%8C%85/"/>
+    <id>http://zhaofandong.github.io/2018/11/02/11-1日和2日的-学习日志大礼包/</id>
+    <published>2018-11-02T05:16:31.000Z</published>
+    <updated>2018-11-03T01:13:38.834Z</updated>
+    
+    <content type="html"><![CDATA[<p>布局：<br>透过页面看本质<br>想要盒子竖着 直接写<br>想要盒子横着 用浮动<br>margin 就是不会影响可见框的大小 但是会影响整个框的位置。<br>在文档流中 父元素的高度默认是被子元素撑开的<br>当子元素设置为浮动之后 父元素的高度会坍塌<br>会导致页面布局混乱<br>苏在在开发中一定要避免出现高度坍塌的问题<br>我们可以将父元素的高度写死，以避免坍塌的问题<br>但是 高度写死 不能自适应 元素高度  不太建议</p><p>解决高度塌陷问题：<br>根据w3c的标准 页面中每个元素都隐含一个属性叫做 Block Formatting Context<br>简称BFC  该属性可以设置打开或者关闭 默认是关闭的<br> 当开启元素的BFC以后 元素将会具有如下的特性：<br> 1.父元素的外边距不会和子元素重叠<br> 2开启BFC的元素不会被浮动元素所覆盖<br>３.开启BFC的元素可以包含浮动的文子元素　</p><p>如何开启元素的BFC<br>1.设置元素的浮动<br>使用这种方式开启，可以撑开父元素，但是会导致父元素的宽度丢失  而且使用这种方式协会下边的元素上移，不能解决问题<br>2.设置元素的绝对定位</p><p>3.设置元素为inline-block<br>可以解决问题，但是会导致宽度丢失，不推荐使用这种方式<br>3.将元素的overflow设置一个非visible<br>overflow：visible/hidden<br>推荐方式：将overflow设置为hidden是副作用最小的开启BFC的方式<br>但是在ie6及以下不支持BFC所以使用这种方式不能兼容ie<br>在ie６中虽然没有BFC　但是具有另一个隐含的属性　ＨａｓＬａｙｏｕｔ<br>该属性的作用和BFC类似，所以在IE６　中可以通过开启ｈａｓｌａｙｏｕｔ来解决问题<br>开启方式很多：<br>１.直接将元素的ｚｏｏｍ设置为１　<br>支持ｉｅ６以及一下　</p><p>导航条　<br>代码附上　</p><p>清除浮动　<br>我们有时候想取消其他元素浮动对当前元素产生的影响，这是可以采用ｃｌｅａｒ<br>　clear 可以用来清除其他浮动元素对当前元素的影响<br>可选值：<br> none 默认值 不清除浮动<br> left 清楚左侧浮动元素对当前元素的影响<br> right 清楚右侧浮动元素对当前元素的影响<br> both 清楚两侧浮动元素对当前元素的影响 </p><p>第二种解决高度塌陷问题：<br>ｃｌｅａｒ　用于兄弟元素之间<br>可以直接在高度塌陷的父元素 的最后 添加一个空白的ｄｉｖ<br>　由于这个ｄｉｖ并没有浮动<br>然后再对其进行清楚浮动，这样可以通过这个空白的ｄｉｖ来撑开父元素的告诉　<br>基本没有后副作用　<br>但是用这种方式虽然可以解决问题　，但是会在页面中添加多余的结构　</p><p>第三种　通过ａｆｔｅｒ　伪类　向元素的组后添加一个空白的块元素，　然后对其清除浮动<br>这样做和添加一个ｄｉｖ的原理一样，可以达到一个相同的效果<br>而且不会在页面中添加的多余的ｄｉｖ　　<br>.clearfix:after{<br>content:” “;<br>display:block;<br>clear:both;<br>}　</p><p>但是在ie6中还需要使用zoom 使用 </p><p>定位：<br>定位指的是将制定的元素放到页面的任意位置<br>通过定位可以任意摆放元素<br>position 属性设置元素位置、<br>static  默认值 没有开启<br>relative 开启元素的相对定位<br>absolute 开启元素的绝对定位<br>fixed 开去元素的固定定位 （也是绝对顶外的一种 ）</p><p>position:relative<br> 1.当开启了元素的相对定位以后，不设置偏移量之后 不会产生任何变化<br> 可以通过left right top bottom 来设置元素的偏移量<br> left ：相对于其定位位置的左偏移量<br> right: 元素相对于其定位位置的右边偏移量<br> top :上面<br> bottom: 下面<br>left:200px;<br>top:200px;<br> 2.相对定位相对的是它自身<br> 3.相对定位的元素不会脱离文档流<br> 4.相对定位会使元素提升一个层级 </p><p> 通常偏移量只需要使用两个就可以对一个元素进行定位<br> 一般会学则水平方向和垂直方向的一个偏移量进行定位</p><p>5.相对定会不会影响元素的性质 块还是块 元素还是元素 </p><p>绝对定位 </p><p>当position 为 absolute的时候  是绝对路径<br>1.并且 当设置absolute的时候  会是元素脱离文档流<br>2.开启绝对定位以后，如果不设置偏移量，则元素的位置不会发生变化<br>3.绝对定位是相对于离他最近的开启了定位的父祖先元素进行定位的<br>如果所有的祖先元素都没有开启定位，则先对于浏览器窗口进行定位<br>4.绝对定位会是元素提升一个层级<br>5.绝对定位会改变元素性质， 内联元素会变成块元素， 宽和高会被内容撑开 </p><p>固定定位：<br>当元素的position属性为fixed 则开始了元素的固定定位<br>固定定位也是一种绝对定位，大部分特点都和绝对定位一样<br>完全脱离文档流<br>不同的是：永远都会相对于浏览器窗口进行定位<br>固定定位会固定在浏览器窗口的某个位置 不会随着滚动条滚动<br>IE6 不支持固定定位 </p><p>z-index 可以设置元素的层级<br>可以为我们的z-index指定一个正整数作为值，该值将会作为当前元素的层级<br>层级越高，越优先显示。<br>对于没有开启定位的元素不能使用z-index</p><p>父元素在高也不会盖过子元素 </p><p>设置元素的透明背景<br>opacity 可以用来设置元素背景的透明<br>踏雪要一个0-1的值<br>0表示完全透明<br>1 表示完全不透明<br>opacity:0.6<br>在ie8及以下的浏览器中不支持  需要使用如下属性：<br>filter:alpha(opacity=50);</p><p>背景颜色：<br>backgorund-image:url(相对路径);<br>相对路径写在哪儿就相对于那个文件夹<br>如果背景图片大于元素，默认会显示图片的左上角<br>如果背景图片小于元素，默认会平铺的方式使图片充满元素<br>可以同时为一个元素制定背景颜色和背景图片<br>并且颜色在图片之后 作为底色 </p><p>backgorund-repeat :<br>repeat  双方向重复（平铺）<br>no-repeat 不重复</p><p>repeat-x:水平方向<br>repeat-y;垂直方向平铺 </p><p>Background-postion 可以调整图片元素在背景图片中的位置<br>background-postion: bottom right 右下</p><p> top right  left bottom center<br> 也可以直接指定偏移量<br> 100px 0px  水平垂直<br> 可以有正数 也可以有负数 </p><p>background-attachemt:用来设置背景图片是否随页面一起滚动<br>scroll fixed 背景图片会固定在某一位置 ，不随页面滚动<br>当背景图片background-attachment为fixed 时<br>背景图片的定位永远相对于浏览器的窗口<br>一般给 body 设置 不会给别的设置 </p><p>按钮</p><p>做完这个功能的时候，发现我们第一次切换图片会发现有一个非常快的闪烁<br>这个闪烁会造成一次不佳的用户体验<br>产生问题的原因：<br>背景图片是以外部资源的形式加载进网页的<br>浏览器没加载一个外部资源就需要单独的发送一次请求<br>但是我们外部资源并不是同时加载，浏览器会在资源被使用时加载资源<br>由于加载图片需要一定时间，所以在加载和显示过程会有一段时间，背景图片无法显示，导致出现闪烁的情况<br>同时加载一张图片上面有三个按钮<br>然后通过background-postion 进行图片移动 然后 就可以反应 这种图片叫做图片整合技术<br>（css sprite ）雪碧图<br>优点：<br>1.将多个图片整合为一张图片里，浏览器只需要发送一次请求，可以同时加载多个图片，提高访问效率，提高用户体验<br>2.将多个图片整合为一张图片，减少了图片的总大小，提高了请求速度，增加了用户体验</p><p>background: 通过该属性可以同时设置所有背景相关样式<br>height:5000px;<br>backround-color:#bfa;<br>background-image:url;<br>background-repeat:no-repeat;<br>background-position:center center;<br>background-attachment:fixed;</p><p>=<br>background:#bfa url center center no-repeat fixed;</p><p>没有顺序要求 谁在前 谁在后 都行<br>自己制作雪碧图 调整画布大小 通过图像 </p><p>表格</p><p>表格就是用来表示一些格式化的数据的<br>HTML 中用table 标签来表示表格<br>tr表示表格的一行 有几行就有几个tr<br>在tr中需要使用td来创建一个单元格 有几个单元格就有几个td<br>width=40% 来调整宽度<br>align center 来控制居中 </p><p><td colspan="2"></td> 横向占格<br>rowspan 用来设置纵向合并 </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;布局：&lt;br&gt;透过页面看本质&lt;br&gt;想要盒子竖着 直接写&lt;br&gt;想要盒子横着 用浮动&lt;br&gt;margin 就是不会影响可见框的大小 但是会影响整个框的位置。&lt;br&gt;在文档流中 父元素的高度默认是被子元素撑开的&lt;br&gt;当子元素设置为浮动之后 父元素的高度会坍塌&lt;br&gt;会导致页
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>10-31 学习日志</title>
