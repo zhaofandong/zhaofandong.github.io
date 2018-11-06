@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[11-5日学习日志]]></title>
+    <url>%2F2018%2F11%2F06%2F11-5%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"><![CDATA[js基础： 原始类型： 数字Number 字符串 string 布尔值boolean undefined null 对象：object 类型转换 ： Number（a） 流程控制： 条件判断 if switch 选择 循环 for while if(表达式成立) { 语句 } 举例： var score = ? if( score&gt;90) { console.log(“奖励100元”); } else if(score&gt;80) { console.log(“做家务”); } else { console.log(“做家务”); } //昨天因为被交出去吃夜宵了，然后就没有写太多 真是羞愧]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[11-4日学习日志]]></title>
     <url>%2F2018%2F11%2F04%2F11-4%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
     <content type="text"><![CDATA[ie6 pngbug 恢复ie6 对图片png24支持度不高 则会导致透明效果过无法正常显示1.在ps中 web所用格式 png-24 改为png-8 但是图片清晰度会有所下降2.用javascript 来解决该问题 需要像页面引入外部的一个javascript 文件然后写一下简单的js代码 来处理该问题 后缀为js不带Min的用在开发 min 用在生产 引入js 文件在body标签的最后引入js文件 在创建一个新的script标签 并且编写一些js代码 DD_belatedPNG.fix("div"); 有一些情况，在特殊浏览器中需要执行，其他不需要执行，就用CSS HACK 代码 条件HACk 条件hack只对IE浏览器有效，其他的浏览器都会将他识别为注释 属性 hack在样式前面添加一个下划线，样式只有ie6一下的浏览器才可以识别到 ie7 一下\9 ie6 以上\0 在样式后面加 只有ie8 及以上的才能够识别CSS HACK 尽量不使用 选择器 hack html 只有ie6 认识 JavaScript 学习 node.js 用来写服务器 轻量级的编程语言javascript 主要负责 ecmascript dom 库 （API） bom语法：1.用字母 数字 特殊符号 组成的命令 字母大小写 十分铭感 行来区分 命令 在同一行 用;来区分命令4.注释// 单行 /**/ 多行注释5.输出alert 弹窗 弹出警告床console.log(); 在控制台中显示cause now you strangle me in my sleep and i wake up with you in my hand 值数字： 0 1 *1小数 附属点：1.1111字符串 ”dfsfdds“’1’布尔值； true false变量：设x=1 x 就是变量 声明变量：var x ;创建一个变量x=”helloWorld” ; 给变量赋值 var x= ; 同时 放在一起多个变量Var x,y,z ;x=1;y=1;z=1; var x=1, y=2,x=3;x 变量名1.变量名 必须是字母和数字2.变量的开始， 最好字母3.变量的大小写敏感 表达式： 运算符算术 +- /%顺序 从左往右 先 + / % 后加减括号提高优先++ 自增 – 自减++a 先自增a++ 后自增NAN不是 数字 比较 布尔值 a=1&gt;2 false== 值一样===类和值 逻辑&amp;&amp; || ！ var a=1 ;var b =”2”;{} var a ={60,61,62 } 数组a[0] 第一个 var a={“a1”:60,”a2”:61,”a3”:62}a.a1 来访问var a={0:60,1:61,2:62}a[0]; 如果对象时空var a =null; 数据转换：var a = “111”;var b =Number(a );]]></content>

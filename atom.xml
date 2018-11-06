@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-11-04T12:23:17.852Z</updated>
+  <updated>2018-11-06T00:58:39.942Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>11-5日学习日志</title>
+    <link href="http://zhaofandong.github.io/2018/11/06/11-5%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/06/11-5日学习日志/</id>
+    <published>2018-11-06T00:58:17.000Z</published>
+    <updated>2018-11-06T00:58:39.942Z</updated>
+    
+    <content type="html"><![CDATA[<p>js基础：</p><p>原始类型： 数字Number 字符串 string  布尔值boolean undefined null </p><p>对象：object </p><p>类型转换 ： Number（a）</p><p>流程控制：</p><p>条件判断 if </p><p>switch 选择  </p><p>循环 for while </p><p>if(表达式成立)</p><p>{</p><p> 语句</p><p>}</p><p>举例：</p><p>var score = ?</p><p>if( score&gt;90)</p><p>{</p><p>console.log(“奖励100元”);</p><p>}</p><p>else if(score&gt;80)</p><p>{</p><p>console.log(“做家务”);</p><p>}</p><p>else</p><p>{</p><p>console.log(“做家务”);</p><p>}</p><p>//昨天因为被交出去吃夜宵了，然后就没有写太多 真是羞愧</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;js基础：&lt;/p&gt;
+&lt;p&gt;原始类型： 数字Number 字符串 string  布尔值boolean undefined null &lt;/p&gt;
+&lt;p&gt;对象：object &lt;/p&gt;
+&lt;p&gt;类型转换 ： Number（a）&lt;/p&gt;
+&lt;p&gt;流程控制：&lt;/p&gt;
+&lt;p&gt;条件判断 if 
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>11-4日学习日志</title>
