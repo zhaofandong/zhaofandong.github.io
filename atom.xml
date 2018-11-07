@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-11-06T00:58:39.942Z</updated>
+  <updated>2018-11-07T14:04:10.114Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>11-7日 学习日志</title>
+    <link href="http://zhaofandong.github.io/2018/11/07/11-7%E6%97%A5-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/07/11-7日-学习日志/</id>
+    <published>2018-11-07T02:10:55.000Z</published>
+    <updated>2018-11-07T14:04:10.114Z</updated>
+    
+    <content type="html"><![CDATA[<p>  首先和大家说一下昨天的凡东不是没有学习，而是都在学习，看ps的圣经宝典，但是因为一天的时间都耗在上上面了，也没有什么好记录笔记的。于是没有写学习日志。（并且得出结论，设计这种东西呢，如果没有天赋，那就只能持之以恒。短时间的锻炼是不存在的）  </p><p>  所以今天的凡东回归继续学习js,有些东西放下就好了。</p><p>js:</p><p>作用域：可访问变量的集合（对象、函数）</p><p>我们定义了一个变量，这个变量可以被使用的地方，可以使用的范围 </p><p>函数</p><p>全局作用域  全局变量 函数外定义的变量 在所有地方都能被访问</p><p>局部作用域 局部变量  在函数里面定义的变量 函数里面被访问到</p><p>function add(){</p><p>console.log(x);</p><p>x=100;</p><p>var y =100;//局部变量</p><p>}</p><p>add();</p><p>var x=1;// 全局变量</p><p>console.log(y);（报错）</p><p>在js中 y=100; 没有定义 默认定义为全局变量 </p><p>预解析：</p><p>浏览器获得js文件的时候 不是立刻去执行代码，全片快速的扫表一边 </p><p>把 变量 预先解析</p><p>把变量的声明 提前 全局 就是把var 提前 </p><p>扫完全局变量 再扫 函数体 将默认定义为全局变量的 变量 提前 </p><p><strong>闭包</strong>：<strong>变量的 私有化问题</strong>  （C#中的 private ）</p><p>局部变量的生命周期 在花括号开始到花括号结束    全局变量只要页面开着 他就活着 </p><p>全局变量谁都可以访问他并且可以 修改</p><p>所以如何将一个局部变量拥有全局变量的周期呢</p><p>function add(){</p><p>var counter=0; //定义局部变量 </p><p>plus= function(){//匿名函数</p><p> counter++;//伪全局变量 拥有全局变量的生命周期</p><p>console.log( counter);</p><p>}</p><p>}</p><p>函数的立即执行 函数申明和函数执行放在一起 </p><p>(function (){</p><p>var counter=0; //定义局部变量 </p><p>return  function(){//匿名函数</p><p> counter++;//伪全局变量 拥有全局变量的生命周期</p><p>console.log( counter);</p><p>}</p><p>})();</p><p>//</p><p>var plus = (function (){</p><p>var counter=0; //定义局部变量 </p><p>return  function(){//匿名函数</p><p> counter++;//伪全局变量 拥有全局变量的生命周期</p><p>console.log( counter);</p><p>}</p><p>})();// 标准的传统闭包 </p><p>plus();</p><p>创建对象举例:</p><p>var person1 ={</p><p>name:”xiaoming “</p><p>sex:”male”</p><p>slogan:”function(){</p><p>fro(var i =0;i&lt;10;i++){</p><p>console.log(“我是小明”)；</p><p>}</p><p>}</p><p>}</p><p>//在这里回顾一下，因为js是弱语言所以不用int string 定义变量 而在C#中  要在方法之中声明变量  int age = 16; string name =”xiaoming  “;  </p><p>js中也有类的概念 ： </p><p>类：系统自带 Arry 自己创建的类 </p><p>对象： 属性的基本操作  增删改查 遍历： 所有属性从头到尾 过一遍 </p><p>查 获取属性的值 、</p><p>var name =person1.name;</p><p>name = person1[“name”];</p><p>以字母开头 不用加引号的 可以用 . 来获取 </p><p>其余的要用括号扩起来 </p><p>person1[“text-text”]</p><p>增加： 修改属性的时候 如果对象里面没有这条属性 自动加上 </p><p>删除：delete delete person1.name; 两条属性中要加逗号  </p><p>遍历：  for (var pN in person1)</p><p>{</p><p>console.log(pN+person1[pN]);</p><p>}</p><p>//在C#语句中 便利一般用 foreach ; </p><p>对象的引用和赋值</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  首先和大家说一下昨天的凡东不是没有学习，而是都在学习，看ps的圣经宝典，但是因为一天的时间都耗在上上面了，也没有什么好记录笔记的。于是没有写学习日志。（并且得出结论，设计这种东西呢，如果没有天赋，那就只能持之以恒。短时间的锻炼是不存在的）  &lt;/p&gt;
+&lt;p&gt;  所以今天
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>日学习日志</title>
+    <link href="http://zhaofandong.github.io/2018/11/07/%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/07/日学习日志/</id>
+    <published>2018-11-07T02:09:46.000Z</published>
+    <updated>2018-11-07T02:09:46.652Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>11-5日学习日志</title>

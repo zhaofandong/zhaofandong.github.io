@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[11-7日 学习日志]]></title>
+    <url>%2F2018%2F11%2F07%2F11-7%E6%97%A5-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"><![CDATA[首先和大家说一下昨天的凡东不是没有学习，而是都在学习，看ps的圣经宝典，但是因为一天的时间都耗在上上面了，也没有什么好记录笔记的。于是没有写学习日志。（并且得出结论，设计这种东西呢，如果没有天赋，那就只能持之以恒。短时间的锻炼是不存在的） 所以今天的凡东回归继续学习js,有些东西放下就好了。 js: 作用域：可访问变量的集合（对象、函数） 我们定义了一个变量，这个变量可以被使用的地方，可以使用的范围 函数 全局作用域 全局变量 函数外定义的变量 在所有地方都能被访问 局部作用域 局部变量 在函数里面定义的变量 函数里面被访问到 function add(){ console.log(x); x=100; var y =100;//局部变量 } add(); var x=1;// 全局变量 console.log(y);（报错） 在js中 y=100; 没有定义 默认定义为全局变量 预解析： 浏览器获得js文件的时候 不是立刻去执行代码，全片快速的扫表一边 把 变量 预先解析 把变量的声明 提前 全局 就是把var 提前 扫完全局变量 再扫 函数体 将默认定义为全局变量的 变量 提前 闭包：变量的 私有化问题 （C#中的 private ） 局部变量的生命周期 在花括号开始到花括号结束 全局变量只要页面开着 他就活着 全局变量谁都可以访问他并且可以 修改 所以如何将一个局部变量拥有全局变量的周期呢 function add(){ var counter=0; //定义局部变量 plus= function(){//匿名函数 counter++;//伪全局变量 拥有全局变量的生命周期 console.log( counter); } } 函数的立即执行 函数申明和函数执行放在一起 (function (){ var counter=0; //定义局部变量 return function(){//匿名函数 counter++;//伪全局变量 拥有全局变量的生命周期 console.log( counter); } })(); // var plus = (function (){ var counter=0; //定义局部变量 return function(){//匿名函数 counter++;//伪全局变量 拥有全局变量的生命周期 console.log( counter); } })();// 标准的传统闭包 plus(); 创建对象举例: var person1 ={ name:”xiaoming “ sex:”male” slogan:”function(){ fro(var i =0;i&lt;10;i++){ console.log(“我是小明”)； } } } //在这里回顾一下，因为js是弱语言所以不用int string 定义变量 而在C#中 要在方法之中声明变量 int age = 16; string name =”xiaoming “; js中也有类的概念 ： 类：系统自带 Arry 自己创建的类 对象： 属性的基本操作 增删改查 遍历： 所有属性从头到尾 过一遍 查 获取属性的值 、 var name =person1.name; name = person1[“name”]; 以字母开头 不用加引号的 可以用 . 来获取 其余的要用括号扩起来 person1[“text-text”] 增加： 修改属性的时候 如果对象里面没有这条属性 自动加上 删除：delete delete person1.name; 两条属性中要加逗号 遍历： for (var pN in person1) { console.log(pN+person1[pN]); } //在C#语句中 便利一般用 foreach ; 对象的引用和赋值]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[日学习日志]]></title>
+    <url>%2F2018%2F11%2F07%2F%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[11-5日学习日志]]></title>
     <url>%2F2018%2F11%2F06%2F11-5%E6%97%A5%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97%2F</url>
     <content type="text"><![CDATA[js基础： 原始类型： 数字Number 字符串 string 布尔值boolean undefined null 对象：object 类型转换 ： Number（a） 流程控制： 条件判断 if switch 选择 循环 for while if(表达式成立) { 语句 } 举例： var score = ? if( score&gt;90) { console.log(“奖励100元”); } else if(score&gt;80) { console.log(“做家务”); } else { console.log(“做家务”); } //昨天因为被交出去吃夜宵了，然后就没有写太多 真是羞愧]]></content>
