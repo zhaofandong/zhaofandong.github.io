@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Sette's Page" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="引用和赋值 定义对象 var 001={ name:”小明”, sex:”male”; } 定义变量来使用对象  var person1 =001; 赋值 ； 引用地址  用类的形式创建对象  创建人的类： function PersonClass(pName,pSex){ //为了区分函数的类和函数  this.name  = pName; this.sex =pSex; this.slogan">
+<meta property="og:type" content="article">
+<meta property="og:title" content="11-8日 学习日志">
+<meta property="og:url" content="http://zhaofandong.github.io/2018/11/08/11-8日-学习日志/index.html">
+<meta property="og:site_name" content="Sette&#39;s Page">
+<meta property="og:description" content="引用和赋值 定义对象 var 001={ name:”小明”, sex:”male”; } 定义变量来使用对象  var person1 =001; 赋值 ； 引用地址  用类的形式创建对象  创建人的类： function PersonClass(pName,pSex){ //为了区分函数的类和函数  this.name  = pName; this.sex =pSex; this.slogan">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-08T14:52:34.877Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="11-8日 学习日志">
+<meta name="twitter:description" content="引用和赋值 定义对象 var 001={ name:”小明”, sex:”male”; } 定义变量来使用对象  var person1 =001; 赋值 ； 引用地址  用类的形式创建对象  创建人的类： function PersonClass(pName,pSex){ //为了区分函数的类和函数  this.name  = pName; this.sex =pSex; this.slogan">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://zhaofandong.github.io/2018/11/08/11-8日-学习日志/"/>
+
+
+
+
+
+  <title>11-8日 学习日志 | Sette's Page</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Sette's Page</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/11/08/11-8日-学习日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sette">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sette's Page">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">11-8日 学习日志</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-08T22:51:21+08:00">
+                2018-11-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/08/11-8日-学习日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/08/11-8日-学习日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>引用和赋值</p>
+<p>定义对象</p>
+<p>var 001={</p>
+<p>name:”小明”,</p>
+<p>sex:”male”;</p>
+<p>}</p>
+<p>定义变量来使用对象</p>
+<p> var person1 =001;</p>
+<p>赋值 ； 引用地址 </p>
+<p>用类的形式创建对象 </p>
+<p>创建人的类：</p>
+<p>function PersonClass(pName,pSex){</p>
+<p>//为了区分函数的类和函数 </p>
+<p>this.name  = pName;</p>
+<p>this.sex =pSex;</p>
+<p>this.slogan=fuction(){</p>
+<p>console.log(“我是”+this.name);</p>
+<p>}</p>
+<p>}</p>
+<p>构造函数：</p>
+<p>var person1 =new PersonClass(“xuiaoming”,”male”);</p>
+<p>var person2=new PersonClass(“xiaohong”,”female”);</p>
+<p>//C# 中 class person {}; ; 使用的是 person person1 = new person(); 注意区别 </p>
+<p>es5 function  -&gt; es6 class</p>
+<p>js 基本包装类型 date math</p>
+<p>创建一个空的对象 </p>
+<p>var obj1={};</p>
+<p>var obj2=new Object();// 空的对象 </p>
+<p>转换类型</p>
+<p>var n1 =1.23;</p>
+<p>var str1=n1.tostring();</p>
+<p>n1.toPrecision(2)  取两位</p>
+<p>var str= “Hello World”</p>
+<p>var n =str.charAt(2) 返回L </p>
+<p>时间相关的对象：Date</p>
+<p>var d =new date(); //获取时间</p>
+<p>d.get Day(); // 获取星期 </p>
+<p>计算代码的性能：耗时 </p>
+<p>var time1 =new Date(); //获取了当前的时间 本地电脑的时间 </p>
+<p>for (var i =0;i&lt;1000000;i++)</p>
+<p>{</p>
+<p> t++;</p>
+<p>}</p>
+<p>var time2 =new Date();</p>
+<p>var n = time2.getTime() - time1.getTime();</p>
+<p>Math ： 跟数学相关的   不是一个类  随机数  </p>
+<p>命名空间  </p>
+<p>Math.floor(Math.random()); //随机数 </p>
+<p>从开始到现在  以上是js的核心语法 </p>
+<p>业务 交互 web变成 一般与浏览器打交道  提供了很多方法 </p>
+<p>页面：动态的 修改网页的内容 和更改文字  DOM操作 </p>
+<p> 底层 ： 浏览器 类似于 存储  BOM 操作 </p>
+<p>浏览器： 加载页面 ：简单的操作系统 </p>
+<p>把网址转换成IP地址 </p>
+<p>域名： <a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a></p>
+<p>DNS服务器： 浏览器吧<a href="http://www.baidu.com" target="_blank" rel="noopener">www.baidu.com</a> 发给DSNS服务器  然后返回地址 </p>
+<p>浏览器收到网络地址  缓存在本地 </p>
+<p>浏览器就要向服务器请求 </p>
+<p>服务器收到了请求 </p>
+<p>服务器 类似于振幅的办公大楼 里面有很多窗口 </p>
+<p>端口 类似于 这个窗口 </p>
+<p>服务器把请求的内容 处理 返回给浏览器 </p>
+<p>浏览器收到文件  解析 </p>
+<p>看到页面 </p>
+<p>浏览器：多线程 </p>
+<p>1.js引擎 </p>
+<p>2.ui渲染</p>
+<p>3.事件线程</p>
+<p>4.发起请求的线程</p>
+<p>5定时器的线程</p>
+<p>js -&gt; 单线程的  -》 编程方便</p>
+<p>银行里面只有一个柜台 处理与js相关的事情 </p>
+<p>同步任务 ：</p>
+<p>异步任务： </p>
+<p>存钱：我要存1万 柜台问我一堆问题 我填了一堆单子 把钱给了里面 </p>
+<p>排队：</p>
+<p>同步：存1万 </p>
+<p>异步： 我一堆问题 我填了一堆单子 -》 在旁边 先做了 -》 再去排队 </p>
+<p>js 如何在浏览器生效</p>
+<ol>
+<li><p>载入阶段 默认：同步</p>
+<pre><code>1. 获取页面内容 2.html-&gt;  解析 loading
+
+   载入DOM树：html
+
+   ​            head
+
+   ​            meta title script 
+
+    同步  下载js  
+
+   ​             js解释器对脚本进行解析 执行
+
+                body
+
+   ​            ....
+
+   解析完成         
+
+   渲染-》文件在下载 图片 
+
+   载入阶段结束 
+</code></pre></li>
+</ol>
+<p>2.事件阶段 异步 onload</p>
+<p>//获取节点 操作dom</p>
+<p>var n =document.getElementById(“div1”);</p>
+<p>console.log(n);</p>
+<p>n = document.getElementById(“div2”);</p>
+<p>console.log(n);</p>
+<p>延迟加载：当dom加载完之后 执行 </p>
+<p>异步加载： 后续了解 </p>
+<p>DOM BOM </p>
+<p>js的库都放在 window 对象里面  -》 里面的方法都是全局的方法 </p>
+<p> //BOM</p>
+<p>弹窗  </p>
+<p>同步：阻断</p>
+<ol>
+<li><p>alert(“”alert 弹窗 “) </p>
+</li>
+<li><p>var bcf =confirm(“confirm 弹窗”)；</p>
+</li>
+<li><p>var strpt = prompt(“prompt 输入：”，”默认值“); 返回用户输入的值</p>
+<p>console.log(strpt);</p>
+</li>
+</ol>
+<p>获取浏览器的导航栏的信息：</p>
+<p>window.location 对象 </p>
+<p>属性： url 的各个部分 </p>
+<p>location.reload(); 刷新页面 </p>
+<p>location.replace(“网址”)； 打开新的网址 </p>
+<p>var bcf = confirm(“confirm 弹窗”)；</p>
+<p>if(bcf)</p>
+<p>{</p>
+<p>location.replace(“<a href="http://www.baidu.com&quot;)" target="_blank" rel="noopener">http://www.baidu.com&quot;)</a>;</p>
+<p>}</p>
+<p>else location.reload();</p>
+<p>浏览器的历史： 前进 后退 </p>
+<p>history.back();</p>
+<p>history.forward();</p>
+<p>history.go(-1); back 1次</p>
+<p>history.go(1); forward 1次</p>
+<p>浏览器的信息：版本 厂家 </p>
+<p>navigator.userAgent ();</p>
+<p>获取浏览器的分辨率：</p>
+<p>screen</p>
+<p>bom 计时器</p>
+<p>循环执行：var sil = setInterval( 函数名， 时间)；每个多少时间执行 函数 </p>
+<pre><code>停掉： clearInterval(sil);
+</code></pre><p>执行一次： var sil = setTimeout(函数，时间); 到了 这个时间 执行函数 </p>
+<pre><code>停跳： clearTimeout(sill);
+</code></pre><p>var num=0;</p>
+<p>function add(){</p>
+<p>console.log(“num = “+ ++num);</p>
+<p>}</p>
+<p>var sil =setInterval(add,1000);</p>
+<p>function end(){</p>
+<p>clearInterval(sil);</p>
+<p>}</p>
+<p>setTimeout(end,10000);</p>
+<p>DOM的操作：</p>
+<p>DOM -》 文档对象模型 </p>
+<p>DOM树：</p>
+<p> html文件 -》 人-》网页的数据</p>
+<p>浏览器-》 数据结构 -》 方便 查找 修改 遍历 操作 </p>
+<p> 样子-》树 </p>
+<p>数据结构： </p>
+<p>线性：单链表 循环链表  队列 栈 数组</p>
+<p>树形：二叉树 平衡数 红黑树 </p>
+<p>网状：有向图 无向图  -》 寻路算法  A*算法</p>
+<p>3中最常用的方法来找到标签</p>
+<p>1.id 唯一性 document.getElementById(“id_name”);</p>
+<p>2.标签名   document.getElementsByTagName(“”);// 返回的是个数组 </p>
+<p>3.class document.getElementsByClassName(“”); //返回的 还是 数组 </p>
+<p>创建节点 </p>
+<p>var p = document.createElement(“p”);</p>
+<p>创建一个文本节点</p>
+<p>var ptxt = document.createTextNode(“p1”);</p>
+<p>p.appendChild(ptext);</p>
+<p>添加节点 </p>
+<p>div1.apppendChild(p);</p>
+<p>删除节点 removeChile();</p>
+<p>var div2=document.getElementById(“div2”);</p>
+<p>div1.removeChild(div2);</p>
+<p> 从父节点中删除 </p>
+<p>div2.parentNode.removeChild(div2);</p>
+<p>自己把自己删除</p>
+<p>在节点中对属性 内容进行操作 </p>
+<p>html 定义好的属性  .  对象的点来获取 以及修改</p>
+<p>js中 class 要用 className 做修改 </p>
+<p>img1.className</p>
+<p>css 样式的修改 </p>
+<p>img1.style.width=”100px”;</p>
+<p>//获取属性 </p>
+<p>img1.getAttribute(“dat”);</p>
+<p>getAttribute();’</p>
+<p>//设置属性</p>
+<p>img1.setAttribute(“属性名”，”属性值”);</p>
+<p>img1.removeAttribute（”src“）;</p>
+<p>img1.addAttribute();</p>
+<p>//修改 </p>
+<p>var p1 =document.getElementById(“p1”);</p>
+<p>p1.innerHTML =” 这是innerHTML <a href="www.baidu.com">this is a  </a>a&gt;”； </p>
+<p>这里的 p1 和 img1 都是 id 名称   </p>
+<p>时间：</p>
+<p>交互 人可以去操作页面 </p>
+<p> js -&gt; 事件 驱动 </p>
+<p>用户-》 HTML元素-》产生一个事件-》 事件 主动的 调用 设定 方法  函数 </p>
+<p>事件源： 产生事件的地方</p>
+<p>事件的类型 ：  点击 键盘 </p>
+<p>事件对象： 记录好 信息 </p>
+<p>事件的处理程序 ：  函数  </p>
+<p>注册： 把以后会发生的事情，先提前报备一下</p>
+<p>举例：</p>
+<p>没钱了就给家里打电话 你 肯定打电话</p>
+<p>没钱了+打电话 -》你</p>
+<p>时间的类型+ 函数 - 》 元素 </p>
+<p>两种发现 实现注册</p>
+<p>1.html的属性： </p>
+<p>属性名： on + 事件的名字  onclick </p>
+<p>属性值： 方法 </p>
+<pre><code>直接在html设定
+
+通过js的元素对象来设定 
+</code></pre><p>html中设定</p>
+<figure class="highlight plain"><figcaption><span>id </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">js文件中：</span><br><span class="line"></span><br><span class="line">```var num=0;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>add()```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&#123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>+ ++num);```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&#125;</span><br></pre></td></tr></table></figure>
+<p>通过 js 的元素对象来设定</p>
+<p>var div1 =document.getElementById(“div1”);</p>
+<p>div1.onclick=add;</p>
+<p>2.通过调用系统提供的方法 </p>
+<p>div1.addEventListener (时间类型click,函数add,事件的处理方式 bool false 冒泡 true 捕获);// 添加时间的监听者 </p>
+<p>div1.addEventListener(“click”,add);</p>
+<p>可以给一个标签绑定多个事件</p>
+<p>div1.removeEventListener(“click”,add);</p>
+<p>ie8以前  兼容性的问题 attachEvent() detachEvent() </p>
+<p>JavaScript 事件函数和事件对象 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var div1 = document.getElementById(&quot;div1&quot;);</span><br><span class="line"></span><br><span class="line">div1.addEventListener(&quot;click&quot;,add);</span><br><span class="line"></span><br><span class="line">事件对象event  提供了事件的详细信息</span><br><span class="line"></span><br><span class="line">具体发生时间的元素，鼠标的位置，点击的状态 键盘的按键等</span><br><span class="line"></span><br><span class="line">fuction  add(event )&#123;</span><br><span class="line"></span><br><span class="line">console.log(event);</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">screenX Y : 屏幕的左上角 </span><br><span class="line"></span><br><span class="line">ClientX Y : 浏览器的左上角</span><br></pre></td></tr></table></figure>
+<p>//与键盘有关的操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">html文件中</span><br><span class="line"></span><br><span class="line">input type=&quot;text&quot; name=&quot;a&quot; id=&quot;input1&quot;</span><br><span class="line"></span><br><span class="line">js文件中</span><br><span class="line"></span><br><span class="line">var input1 = document.getElementById(&quot;input1&quot;);//找到标签</span><br><span class="line"></span><br><span class="line">input1.addEventListener(&quot;keydown&quot;,add);//绑定事件</span><br><span class="line"></span><br><span class="line">fuction add(event)&#123;</span><br><span class="line"></span><br><span class="line">var e = event || window.event ;//ie8</span><br><span class="line"></span><br><span class="line">cosole.log(event);</span><br><span class="line"></span><br><span class="line">&#125;// 设置事件</span><br></pre></td></tr></table></figure>
+<p>有一些事件 带有自己的默认值 </p>
+<p>event.prevenDefault();//取消默认操作  在事件中操作</p>
+<p> a1.onclick=add;</p>
+<p>可以在事件中添加 return false ;</p>
+<p> ie8 -&gt; event.returnvalue= false;</p>
+<p>return false ; </p>
+<p>事件的传播：</p>
+<p>在默认的情况下面，点击页面下的一个标签，处在传播路径上的标签都会监听到对应的事件 </p>
+<p>传播路径：</p>
+<p>传播方式决定 </p>
+<p>事件流： 对应标签接收到时间的顺序 </p>
+<p>回升： 人-》 大山-》 人</p>
+<p>两大阶段：</p>
+<p>捕获阶段：从起始点 - 》 目标位置 </p>
+<p>冒泡阶段：目标位置 - 》 起始点 </p>
+<p>终止冒泡阶段</p>
+<p>function div2Click(){</p>
+<p>e.stopPropagation();</p>
+<p>console.log(“冒泡阶段 终止 “)</p>
+<p>}</p>
+<p>事件代理：</p>
+<p>html 文件中：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;ul&gt;    </span><br><span class="line">	&lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;&gt;</span><br></pre></td></tr></table></figure>
+<p>js文件中：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">直接设置在ulclick 中即可</span><br></pre></td></tr></table></figure>
+<p> 以上 是关于js的 简单用法 ，蝉壳学院的 初级课程结束 </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/07/11-7日-学习日志/" rel="next" title="11-7日 学习日志">
+                <i class="fa fa-chevron-left"></i> 11-7日 学习日志
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Sette</p>
+              <p class="site-description motion-element" itemprop="description">Something normal from Sette's life</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Sette</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '126Js4Qar0u3XKsV6WDwC2Hh-gzGzoHsz',
+        appKey: 'Yll6mvnoD24abSbOttkcVvKW',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

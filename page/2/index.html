@@ -264,6 +264,156 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/19/10-19-学习日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sette">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sette's Page">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/19/10-19-学习日志/" itemprop="url">10/19 学习日志</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-19T15:58:43+08:00">
+                2018-10-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/19/10-19-学习日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/19/10-19-学习日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>html规范<br>html 中不取分大小写，但是我们一般都是用小写<br>html 中的注释不能嵌套<br>html 标签必须结构完整 要么成对出现 要么自结束标签<br>html 标签可以嵌套 但不能交叉嵌套<br>html 标签中的属性必须有值 值必须加引号  双引号 单引号都可以<br>内联框架  在一个页面引入另一个页面<br>iframe 来创建一个内敛框架  属性: src:指向一个外部页面的路径，可以使用相对路径 width; height;name：可以为我们的内联框架命名 </p>
+<figure class="highlight plain"><figcaption><span>src</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">在我们的现实开发中，我们不推荐使用内敛框架，内敛框架中的内容不会被搜索引擎检索</span><br><span class="line">超链接 使用a标签来创建一个超链接</span><br><span class="line">属性：</span><br><span class="line">herf  只想链接跳转的目标地址，可以写一个相对路径也可以写一个完整的地址</span><br><span class="line">```&lt;a herf=&quot;.....&quot;&gt; &lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<p>_self,表示在当前窗口中打开（默认值）<br>_blank,在新的窗口中打开链接</p>
+<figure class="highlight plain"><figcaption><span>herf</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;br/&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>src</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">以上设置一个内联框架的name属性值，链接将会在制定的内联框架中打开\</span><br><span class="line">&lt;center&gt;标签中的内容会默认在页面中居中显示&lt;/center&gt;</span><br><span class="line">创建超链接是，如果地址不确定可以直接写一个#号作为占位符</span><br><span class="line">回到顶部</span><br><span class="line">如果将我们链接地址设为#，则点击超链接以后会自动跳转到当前页面的顶部</span><br><span class="line">html 有一个属性每一个元素都可以设置，该属性可以作为我们标签的唯一属性，这个属性就是id</span><br><span class="line">```&lt;a id=&quot;bottom&quot; &gt; ```不能用数字开头 id属性在同一个页面中 只能有一个 不能重复 </span><br><span class="line">```&lt;a herf=&quot;#bottom&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>联系我们： 发送电子邮件的超链接  点击链接以后可以自动打开计算机中默认的客户端<br>herf=”mailto:邮件地址”</p>
+<p>css 层叠样式表<br>多层的结构  一层叠一层<br>样式表可以将css编写到style的属性当中 给谁设置写在谁的里面<br>将样式直接编写到style属性中，这种要是称为内联样式<br>内联样式只对当前的标签的元素内容起作用<br>内联样式不方便复用<br>结构与表现耦合，不方便后期的维护，不方便使用，尽量避免使用<br><figure class="highlight plain"><figcaption><span>style</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">也可以将css样式编写到head中的style标签里</span><br><span class="line">，然后通过css样式编写到style标签中，通过css选择器选定院所，然后统一为他设置样式，进一步复用，编写到style中也可以是表现和结构进一步分离，也是我们推荐的</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">css选择器 来选择页面指定元素</span><br><span class="line">```p&#123;</span><br><span class="line">	color:red;	</span><br><span class="line">	font-size:18px</span><br><span class="line"> &#125; 选中所有的p元素 </span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<p>text表示文本 css表示 css文件</p>
+<p>css编写到外部的文件中，然后通过link标签来讲外部的css文件引入到当前的页面中，这样外部文件中的Css样式表将会应用到当前页面中，<br><figure class="highlight plain"><figcaption><span>rel</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">将css样式统一编写到外部的样式表中，完全是结构和表现分离，可以是样式表在不同的页面使用，最大限度地使样式可以进行复用，将统一写在样式表中，</span><br><span class="line">通过link标签引入，可以利用浏览器的缓存加快用户访问的速度提高了用户体验。所以在开发中我们最推荐使用的方式就是用外部的css文件。</span><br><span class="line">在css中只能用css注释/*...只能写在style标签和css文件中*/</span><br><span class="line">选择器 声明块 </span><br><span class="line">选择器</span><br><span class="line">通过选择器可以选中页面中制定的元素，并且将声明块中的样式应用到选择器对应的元素上。</span><br><span class="line">声明块</span><br><span class="line">用一堆&#123;&#125;括起来</span><br><span class="line">实际上是一组一组名值对</span><br><span class="line">多个声明用;隔开</span><br><span class="line">声明的样式名和样式值用：来连接</span><br><span class="line"></span><br><span class="line">块元素和内联元素</span><br><span class="line">div就是一个块元素  块元素独占一行</span><br><span class="line">p h1 h2 h3  </span><br><span class="line">div这个标签没有任何语义 就是纯粹一个块元素 主要用来对我们的页面进行布局 </span><br><span class="line">span是一个内联元素 （行内元素）</span><br><span class="line">所谓行内元素，指的是只占自身大小的元素，不会占用一行</span><br><span class="line">a, img ,ifram span </span><br><span class="line">span 没有任何语义 span标签专门用来选中文字，然后为文字来设置样式 </span><br><span class="line">块元素主要重要做页面的布局，内联元素主要用来选中文本中设置样式 </span><br><span class="line">一般情况下只使用块元素去包含内联元素，而不会使用内联元素去包含一个块元素</span><br><span class="line">a元素可以包含任意元素，除了它本身</span><br><span class="line">p元素不可以包含任何块元素 </span><br><span class="line"></span><br><span class="line">css 常用选择器</span><br><span class="line">选中所有的p元素</span><br><span class="line">```p&#123;</span><br><span class="line">  color:red ;</span><br><span class="line">&#125;</span><br><span class="line">h1&#123;</span><br><span class="line"> color:red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>id选择器<br>通过元素的id的属性值选择唯一一个元素<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#p1&#123;</span><br><span class="line">font-size:20px </span><br><span class="line">&#125;</span><br><span class="line">&lt;p id=&quot;p1&quot;&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p> 我们可以为元素与设置class属性，class属性和id属性类似，只不过class属性可以重复<br>  拥有相同class属性值的元素，我们说他们是一组元素<br><figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p class=&quot;2&quot;&gt;&lt;p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>  类选择器<br>  通过元素的class属性值选中一组元素<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">.p2&#123;</span><br><span class="line">color:red</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p> class可以同时为一个元素设置过个class属性值，多个值之间使用空格隔开</p>
+ <figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">选择器分组</span><br><span class="line">通过选择器分组可以同时选择多个选择器对应的元素</span><br><span class="line">语法：选择器1，选择器2，选择器N&#123;&#125;</span><br><span class="line"></span><br><span class="line">通配选择器</span><br><span class="line">可以选择页面中所有的元素</span><br><span class="line">```*&#123;</span><br><span class="line">color：red;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>  复合选择器（交集选择器）<br>  作用：<br>  可以选中同时满足多个选择器的元素<br>  语法：选择器1选择器2选择器N{} 一盘多用于class<br>  对于id选择器来说 不建议使用复合选择器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;&lt;span&gt;,,,&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p> 元素之间的关系：<br> 父元素：直接包含子元素的元素 div是p的父元素 而不是 span的父元素<br> 子元素：直接被父元素包含的元素<br> 祖先元素 div 是span的祖先元素<br> 后代元素元素：。。。<br> 兄弟元素：拥有同样的父元素的元素是兄弟元素。</p>
+<p> 后代元素选择器：<br> 选定制定元素的后代元素<br> 语法：祖先元素 后代元素{}</p>
+<p> 子元素选择器：<br> 选中制定父元素的指定子元素<br> 语法：父元素&gt;子元素{}<br> IE6 不支持子元素选择器 </p>
+<p>伪类专门用来表示元素的一种状态<br> 比如：访问过的超链接，比如普通的超链接，比如获取焦点的文本框。<br> 当我们需要为处在这些状态的元素设置样式的时候，可以给他们设计伪类<br> a:link 正常连接<br> a:visited 访问过的链接<br> a:hover 鼠标滑过的链接<br> a:active 正常点击的链接<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```a:link&#123;color:red&#125;</span><br></pre></td></tr></table></figure></p>
+<p> 由于涉及到用户的隐私问题，所以使用visited伪类只能设置用户的字体颜色<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```a:active&#123;&#125;```超链接被点击的状态 </span><br><span class="line">p:hover&#123;&#125;也可以</span><br><span class="line">hover 和 active 也可以为其他的元素设计 但是 ie6不支持 超链接以外的元素 设置 。</span><br></pre></td></tr></table></figure></p>
+<p><input type="text"> 文本输入框<br>input：focus{ background-color:yellow;}<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">::selection 为P标签选中的内容使用样式 注意在火狐中需要其他的写法 前面加上-moz-  </span><br><span class="line">```p::selection&#123;background-color:orange&#125;</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/18/10-18-学习日志/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1600,141 +1750,11 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/09/17/the-frist-eassy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sette">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sette's Page">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/17/the-frist-eassy/" itemprop="url">the frist eassy</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-17T19:27:37+08:00">
-                2018-09-17
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/17/the-frist-eassy/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/17/the-frist-eassy/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#<font face="微软雅黑">初次见面</font></p>
-  <font face="微软雅黑">从周日到目前为止，我开始搭建了博客，并且，正在用markdown写这手头的这篇日志。怎么说呢。有目标才会有进步吧。从半个月前，平哥初次展示了他的博客之后，当时便有这个想法，我也搭建一个我的博客，于是，有了sette’s page的诞生。但是，为什么花了半个月，因为我花了半天的时间看了一下需要的技术，果断的放弃了之后。反而在前天，闲着没事的时候，尝试的做了一下，花了两个小时，便搭建成功。<br>  也是蛮好笑的。自己一直无论什么事情都会去对别人说试一试，反而到自己这里却更容易胆怯。好在这一次。我成功了。<br>  关于这次的搭建，又可以参考很多的文献。所以，我也就不再做一篇教程关于如何搭建的。但是，还是要提一下，最后需要用到命令符来讲hexo放进一个新的文件夹里。并且 转换用 cd 。 对于我这个门外汉来说，其实也是需要一点的时间。<br>  好在，还是做出来了。<br>  大家好，我是Sette，一个学习编程的日语生。<br>  今后我的博客里大概会有我的日语学习过程以及编程的内容，请多多关照。<br></font>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1780,7 +1800,7 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
