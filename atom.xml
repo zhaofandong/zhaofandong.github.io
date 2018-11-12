@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhaofandong.github.io/"/>
-  <updated>2018-11-08T14:52:34.877Z</updated>
+  <updated>2018-11-12T14:46:18.093Z</updated>
   <id>http://zhaofandong.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>11-12 学习日志</title>
+    <link href="http://zhaofandong.github.io/2018/11/12/11-12-%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97/"/>
+    <id>http://zhaofandong.github.io/2018/11/12/11-12-学习日志/</id>
+    <published>2018-11-12T14:37:45.000Z</published>
+    <updated>2018-11-12T14:46:18.093Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习 bootstrap4  框架<br>container class 可以给设置一个响应式的布局<br>container-fluid 流动<br>class row  每一行<br>class col 每一列<br>col 默认平分12<br>col-6  12个里面占6个 以此类推<br>row align-items-end/center/start 垂直对齐方式<br>row align-self-start  按照自己的方式对齐<br>row justify-content-start 默认的水平对齐方式 center 水平居中<br>水平垂直都居中 row justify-content-center align-items-center<br>在列中排第一col order-first<br>在列中排序 col order-1 order-2 order-3<br>偏移 offset offset-2<br> sm md lg<br> col-sm 560以上 等分 &lt;等分<br>col-sm-6  lg-3 小尺寸中等尺寸 6格子 大尺寸3格<br><figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;h4&gt;Alert&lt;/h4&gt;</span><br></pre></td></tr></table></figure></p><figure class="highlight plain"><figcaption><span>href</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;button class=&quot;close&quot; data-dismiss=&quot;alert&quot;&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;/button&gt;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;button class=&quot;btn btn-damger close-alter&quot;&gt;``````Close```&lt;/button&gt;</span><br></pre></td></tr></table></figure><p>bt中的jq<br>$(‘…’).ready(()=&gt;{<br>$(‘选择器’).on(‘选择器’,()=&gt;{执行的内容})</p><p>})<br>Badge 标签组件<br>span.baddge.badge-primary/secondary badge-pill<br>breadcrumb 显示用户的位置 导航位置<br>nav<br>ol.breadcrumb<br>li.breadcrumb-item  a<br>li.breadcrumb-item  a<br>li.breadcrumb-item  active<br>button 组件<br>a.button.but-outline-danger(情景类) btn-lg btn-block  disabled<br>群组 ：举例 包装一组按钮<br>div .btn-group  btn-group-vertical 垂直显示<br>.btn.btn-secondary<br>.btn.btn-secondary<br>.btn.btn-secondary<br>/div<br>card 卡片组件（ 没有固定的宽度 随着包装的容器大小变化而变化 ）<br>card-group// card-deck 两个卡片中间有空   //card-colums<br>div .card （包装 ） text-right 右对齐  center 居中 text-white 字体变色<br>img src=”” ajlt=”” class=”card-image-top”<br>.card-header//card-img-overlay<br>.card-body<br>.card-title<br>.card-description<br>.card-footer</p><p>carousel slide 旋转木马  可以循环显示内容  id=”carousel-demo”<br>ol class=”carousel-indicators”<br>li [data-target=#carousel-demo] data-slide-to=”0”索引号 class=”active”<br>li [data-target=#carousel-demo] data-slide-to=”1”<br>.carousel-inner / data-rid=”carousel” 自动旋转<br> a href=”#carousel-demo” .carousel-control-per data-slide=”prev” 小箭头<br> a href=”#carousel-demo”  .carousel-control-next data-slide=”next” 仙剑头<br>/<em> .carousel-item active<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..” </em>/</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;学习 bootstrap4  框架&lt;br&gt;container class 可以给设置一个响应式的布局&lt;br&gt;container-fluid 流动&lt;br&gt;class row  每一行&lt;br&gt;class col 每一列&lt;br&gt;col 默认平分12&lt;br&gt;col-6  12个里面
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>11-8日 学习日志</title>
@@ -449,30 +470,6 @@
     
     
       <category term="-心得" scheme="http://zhaofandong.github.io/tags/%E5%BF%83%E5%BE%97/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>添加tags和categories</title>
-    <link href="http://zhaofandong.github.io/2018/09/19/%E6%B7%BB%E5%8A%A0tags%E5%92%8Ccategories/"/>
-    <id>http://zhaofandong.github.io/2018/09/19/添加tags和categories/</id>
-    <published>2018-09-19T11:39:56.000Z</published>
-    <updated>2018-09-19T11:43:54.071Z</updated>
-    
-    <content type="html"><![CDATA[<p>  现在正在学习如何给文章加上标签，并且考虑将文章分为大类。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;  现在正在学习如何给文章加上标签，并且考虑将文章分为大类。&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="&lt;font face=&quot;微软雅黑&quot;&gt; 学习&lt;/font&gt;" scheme="http://zhaofandong.github.io/tags/font-face-%E5%BE%AE%E8%BD%AF%E9%9B%85%E9%BB%91-%E5%AD%A6%E4%B9%A0-font/"/>
     
   </entry>
   
