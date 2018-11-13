@@ -264,6 +264,164 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/11/13/11-13日-学习日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sette">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sette's Page">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/13/11-13日-学习日志/" itemprop="url">11-13日 学习日志</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-13T20:36:57+08:00">
+                2018-11-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/13/11-13日-学习日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/13/11-13日-学习日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.collapse: 切换内容可见性</p>
+<p>a herf=collapse-demo .btn.btn-primary<br>data-toggle=collapse<br>.collaspse #collapse-demo<br>.card.card-body hello </p>
+<p>button<br>.btn btn-primary<br>data-toggle collaspe<br>data-target collapse-demo </p>
+<p>2.Accordion 手风琴<br>div #accordion<br>//命令 .card&gt;.card-header&gt;card-body&gt;hello<br>.card<br>.card-header a hred collaspe-1 data-toggle=collapses<br>.collapse show  #collapse-1  data-parent=#accordion<br>.card-body  hello </p>
+<p>//命令 .card&gt;.card-header&gt;card-body&gt;hello<br>.card<br>.card-header a hred collaspe-2 data-toggle=collapses<br>.collapse #collapse-2  data-parent=#accordion<br>.card-body  hello </p>
+<p>3.dropdown 下拉菜单<br>.dropdown//.btn-group dropup style=postion:absolute;buttom:30%<br>a href .btn.btn-success<br>button #dropdown-demo .btn.btn-outline-wearning dropdown-toggle-sp;ot  data-taggle=”dropdown” data-offset=”15”<br>span.sr-only 包装的文字不会显示在界面上  Dropdown<br>.dropdown-menu show// dropdown-menu-left/right<br>.dropdown-header web languager<br> a href .dropdown-item  html<br>a href .dropdown-item  css<br>a href .dropdown-item  javascript<br>.dropdown-divider 分割线<br>a href .dropdown-item  more<br>$(‘#dropdown-demo’).on(‘show.bs.dropdown’,()=&gt;{console.log(‘show’)}) </p>
+<p>3.jumbotron 大屏幕</p>
+<p>.jumbotron h1/dispaly-1 hello<br>p .lead mb-4 welcome<br>a .btn.btn-primary.btn-lg subscribe</p>
+<p>4.list-group 列表群组<br>div.row<br> div.col-4<br>ul/div .list-group<br>li / a data-toggle=”list” href=#html-content .list-group-item .list-group-item-action active/disable html<br>li / a href.list-group-item .list-group-item-action css<br>li / a href.list-group-item .list-group-item-action.d-fles.justify-content-between.align-items-center javascipt span .badge.badge-primary.badge-pill 12  /span<br>ul/div<br>div .col8=-8<br>div .tab-content<br>div.tab=pane fade show active #html-content hello html<br>div.tab=pane fade #css-content  hello css<br>div.tab=pane fade #javascript-content hello jacascript    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">在js中，</span><br><span class="line">$（document）.ready(()=&gt;&#123;</span><br><span class="line">cont list = $(&apos;tab-demo.list-group a&apos;)</span><br><span class="line">list.click(fuction(event)&#123; event.preventDefault()</span><br><span class="line">$(this).tab(&apos;show&apos;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>5.Modal 对话框可以放在覆盖当前页面显示</p>
+<p>6.scrollspy 滚动监听<br> 滚动到哪 出现到哪 </p>
+<figure class="highlight plain"><figcaption><span>data-spy</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;div class=&quot;component demo&quot; style=&quot;height:300vh&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;div class=&quot;col-3&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>id</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;li class=&quot;nav-item&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>href</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;a href=&quot;#css&quot; class=&quot;nav-link&quot;&gt;css&lt;/a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;li class=&quot;nav-item&quot;&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>href</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;/li&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>are looking at a numerical representation of your connection known as an IP address.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```This address signifies a few things about your connection. It tells you your location, and it tells you what sort of connection you have.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>should always check your IP address to ensure your connection is coming from where you intend it to coming from.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```Find out more about IP addresses here&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>id</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;p&gt;You are looking at a numerical representation of your connection known as an IP address.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>address signifies a few things about your connection. It tells you your location, and it tells you what sort of connection you have.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```You should always check your IP address to ensure your connection is coming from where you intend it to coming from.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>out more about IP addresses here<p></p>```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```&lt;h3 id=&quot;Js&quot;&gt;Js&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>are looking at a numerical representation of your connection known as an IP address.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```This address signifies a few things about your connection. It tells you your location, and it tells you what sort of connection you have.</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>should always check your IP address to ensure your connection is coming from where you intend it to coming from.```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">```Find out more about IP addresses here&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<p>6.tooltips<br>显示 小提示<br><figure class="highlight plain"><figcaption><span>class</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip()</span><br></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/11/12/11-12-学习日志/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -351,7 +509,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">```&lt;button class=&quot;btn btn-damger close-alter&quot;&gt;``````Close```&lt;/button&gt;</span><br></pre></td></tr></table></figure>
 <p>bt中的jq<br>$(‘…’).ready(()=&gt;{<br>$(‘选择器’).on(‘选择器’,()=&gt;{执行的内容})</p>
 <p>})<br>Badge 标签组件<br>span.baddge.badge-primary/secondary badge-pill<br>breadcrumb 显示用户的位置 导航位置<br>nav<br>ol.breadcrumb<br>li.breadcrumb-item  a<br>li.breadcrumb-item  a<br>li.breadcrumb-item  active<br>button 组件<br>a.button.but-outline-danger(情景类) btn-lg btn-block  disabled<br>群组 ：举例 包装一组按钮<br>div .btn-group  btn-group-vertical 垂直显示<br>.btn.btn-secondary<br>.btn.btn-secondary<br>.btn.btn-secondary<br>/div<br>card 卡片组件（ 没有固定的宽度 随着包装的容器大小变化而变化 ）<br>card-group// card-deck 两个卡片中间有空   //card-colums<br>div .card （包装 ） text-right 右对齐  center 居中 text-white 字体变色<br>img src=”” ajlt=”” class=”card-image-top”<br>.card-header//card-img-overlay<br>.card-body<br>.card-title<br>.card-description<br>.card-footer</p>
-<p>carousel slide 旋转木马  可以循环显示内容  id=”carousel-demo”<br>ol class=”carousel-indicators”<br>li [data-target=#carousel-demo] data-slide-to=”0”索引号 class=”active”<br>li [data-target=#carousel-demo] data-slide-to=”1”<br>.carousel-inner / data-rid=”carousel” 自动旋转<br> a href=”#carousel-demo” .carousel-control-per data-slide=”prev” 小箭头<br> a href=”#carousel-demo”  .carousel-control-next data-slide=”next” 仙剑头<br>/<em> .carousel-item active<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..” </em>/</p>
+<p>carousel slide 旋转木马  可以循环显示内容  id=”carousel-demo” data-ride=”carousel “ //可以自动 data-interval=”1000” =》相当于 js中设置了interval<br>ol class=”carousel-indicators”<br>li [data-target=#carousel-demo] data-slide-to=”0”索引号 class=”active”<br>li [data-target=#carousel-demo] data-slide-to=”1”<br>.carousel-inner / data-rid=”carousel” 自动旋转<br> a href=”#carousel-demo” .carousel-control-per data-slide=”prev” 小箭头<br> a href=”#carousel-demo”  .carousel-control-next data-slide=”next” 仙剑头<br>/<em> .carousel-item active<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..”<br>img .d-block w-100 src=”..” alt=”..” </em>/<br>在js中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$(document).ready(()=&gt;&#123;</span><br><span class="line">$(&apos;.carousel&apos;).carousel(&#123;interval:5000 &#125;)</span><br><span class="line">&#125;&#125;</span><br><span class="line">$(&apos;.carousel&apos;).on(&apos;slide.bs.carousel&apos;,(event)=&gt;&#123;</span><br><span class="line">console.log(&apos;slide:&apos;,&apos; 方向：$&#123;event.direction&#125; </span><br><span class="line">从： $&#123;event.from&#125;</span><br><span class="line">到:%&#123;event.to&#125;</span><br><span class="line">&apos;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
 
           
         
@@ -1938,156 +2096,6 @@ DD_belatedPNG.fix("div");
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/30/10-30-学习日志/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sette">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sette's Page">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/30/10-30-学习日志/" itemprop="url">10-30 学习日志</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-30T12:32:22+08:00">
-                2018-10-30
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/30/10-30-学习日志/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/30/10-30-学习日志/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>长度单位px 像素<br> 像素是我们在网页中使用的最多的一个单位<br> 一个像素就相当于我们屏幕中一个小点<br> 我们的屏幕实际上疾苦是有这个像素点的构成，但这些像素不能直接看见。<br> 不同的屏幕像素大小也不一样，像素越小，效果越好<br> 百分比% 父元素发生变化的时候，子元素也发生变化<br> 在我们创建一个自适应的界面，我们一般用百分比<br> em 和百分比类似，相对于当前元素的字体大小来计算的<br> 1em =1font-size </p>
-<p> .box1{<br> width:50%;<br> height:50%;</p>
-<p> }<br> <div class="box"></div><br> <div class="box1"></div></p>
-<p> 颜色<br> rgb值表示颜色<br>也可以用16进制的rgb来表示颜色， 原理和上边RGB原理一样<br>语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">三组两位的十六进制来表达一个颜色 </span><br><span class="line">RGB 数字 255个数字来表示 </span><br><span class="line">```#ff0000 这样重复的两个数字可以简单写 # f00</span><br></pre></td></tr></table></figure></p>
-<p>字体样式</p>
-<p>.p1{<br>color:red;<br>font-size:30px; 浏览器默认的文字大小16px<br>font-size 设置的不是文字本身的大小，在页面中，每个文字都是在一个看不见的框中 我们设置的font-size 实际上是我们格的高度<br>一般文字比格子小一点  根据字体的不同，显示的效果也不一样<br>font-family:华文彩云， 微软雅黑;   指定字体  并且可以指向多个字体 </p>
-<p>}</p>
-<p class="p1"><br>i am  p<br><br></p>
-
-<p>字体分类：<br>serif （衬线字体）<br>sans-serif（ 非衬线字体）<br>monospace（等宽字体）<br>cursive（草书字体）<br>fantasy（虚幻字体）<br>可以将字体设置为这些大的分类<br>浏览器会自动选定指定的字体，并应用样式<br>一般讲大分类放在font-family 的最后一个 </p>
-<p>font-style 可以用来设置文字他的斜体<br>font-style:italic;  oblique 倾斜 // 文字斜体  没有区别</p>
-<p>大多数浏览器不会对倾斜和斜体作区分<br>font-weight:normal;bold;100；<br>改样式也可以设置100-900之间的9个值（但是用户计算机里面往往没有这多字体的级别 ，不能达到我们想要的效果 ）</p>
-<p>font-variant:small-caps;文本小型大写字母显示 ；<br>.p2{<br>在CSS中还为我们提供了一个样式　叫ｆｏｎｔ<br>font:italic small-caps bold 60px “微软雅黑”<br>使用font 没有顺序要求 可写可不写  但是大小 字体一定要写 大小在倒数第二个 字体倒数第一个 }<br> 有多少个样式， 要解析几次 /</p>
-<p> 行间距：<br> <style type="text/css"><br>我们只能通过设置行高来设置行间距<br>.p3{<br>line-height:40px;行高类似于单线本  线和线之间的距离  网页中的文字实际上也是写在看不见的行里  而文字会默认在行高中垂直居中<br>}<br>line-height 可以直接接受一个大小 也可以直接接受百分数 可以直接传一个正整数 则行高会设置成字体相应的倍数<br>对于单行文本  可以将行高设置为和父元素的高度一致 可以是单行文本在父元素中垂直居中<br>在font中也可以指定行高<br>font: 30px/50px  ;50px  值得就是行高<br> </style><br> </p><p class="p3"><br>  行间距设置<br> </p><br>盒子模型 框模型  box<br>css 处理页面，他认为欸每个元素都在一个不可见的盒子里<br>对网页的布局就是摆放盒子<br>内容区 content<br>内边距 padding<br>边框  border<br> 外边框  margin<br> 使用width来设置内容去的宽度  height来设置盒子内容取得高度<p></p>
-<p> 设置边框<br> background-color<br> border-width<br> border-color<br> border-style<br> 三个不能缺一个 </p>
-<p> 盒子可见大小要考虑到内容和边框<br> border-width: 上右下左的顺序  如果只有两个值 第一个给上下 第二个值应用给 左右<br> border color 也可以这么运用颜色<br> border style 默认没有边框  solid 实现 dotted 点状 dashed 虚线  double 双线<br> 大部分的浏览器中，边框的宽度和颜色都是有默认值的，而边框的样式都是none </p>
-<p> 在css中 一个border 就可以设置刚才那三个样式 ，并且没有顺序<br> 但是  一旦指定  四条边都一样 不能单独指定</p>
-<p> 但是 border -top border-bottom border- right border-left </p>
-<p> 内边距 padding 就是盒子的内容区与盒子边框的距离<br> 会影响盒子的可见框的大小<br> 元素的背景会延伸到内边距<br> 盒子可见框的宽度 border-left-width+padding-left+width+ width + padding-right + border-right </p>
-<p> padding:100px 200px 300 px  之类的会比较方便 </p>
-<p> 外边距 盒子与其他盒子之间的距离<br> 他不会影响可见框的大小  而是会影响到盒子的位位置<br> 盒子有四个方向的外边距<br>  margin-top<br>  margin-right<br>  margin-bottom<br>  margin-left<br>  由于页面中的元素一般都是向上 向左<br>  所以注意当我们设置上和左边的外边距的时候，可能会影响 自身盒子的位置<br>   但是下和右 会影响其他盒子的位置<br>   外边距也可以指定为一个负值<br>   margin-left=-100px;<br>   则元素会向反方向移动<br>  margin 还可以设置为 auto  一般设置给水平方向<br>  如果将 right left 设置为auto  水平居中<br>  外边距简写字符 margin 可以同时设置四个 </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2138,7 +2146,7 @@ DD_belatedPNG.fix("div");
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

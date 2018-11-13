@@ -264,6 +264,156 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/30/10-30-学习日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sette">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sette's Page">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/30/10-30-学习日志/" itemprop="url">10-30 学习日志</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-30T12:32:22+08:00">
+                2018-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/30/10-30-学习日志/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/30/10-30-学习日志/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>长度单位px 像素<br> 像素是我们在网页中使用的最多的一个单位<br> 一个像素就相当于我们屏幕中一个小点<br> 我们的屏幕实际上疾苦是有这个像素点的构成，但这些像素不能直接看见。<br> 不同的屏幕像素大小也不一样，像素越小，效果越好<br> 百分比% 父元素发生变化的时候，子元素也发生变化<br> 在我们创建一个自适应的界面，我们一般用百分比<br> em 和百分比类似，相对于当前元素的字体大小来计算的<br> 1em =1font-size </p>
+<p> .box1{<br> width:50%;<br> height:50%;</p>
+<p> }<br> <div class="box"></div><br> <div class="box1"></div></p>
+<p> 颜色<br> rgb值表示颜色<br>也可以用16进制的rgb来表示颜色， 原理和上边RGB原理一样<br>语法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">三组两位的十六进制来表达一个颜色 </span><br><span class="line">RGB 数字 255个数字来表示 </span><br><span class="line">```#ff0000 这样重复的两个数字可以简单写 # f00</span><br></pre></td></tr></table></figure></p>
+<p>字体样式</p>
+<p>.p1{<br>color:red;<br>font-size:30px; 浏览器默认的文字大小16px<br>font-size 设置的不是文字本身的大小，在页面中，每个文字都是在一个看不见的框中 我们设置的font-size 实际上是我们格的高度<br>一般文字比格子小一点  根据字体的不同，显示的效果也不一样<br>font-family:华文彩云， 微软雅黑;   指定字体  并且可以指向多个字体 </p>
+<p>}</p>
+<p class="p1"><br>i am  p<br><br></p>
+
+<p>字体分类：<br>serif （衬线字体）<br>sans-serif（ 非衬线字体）<br>monospace（等宽字体）<br>cursive（草书字体）<br>fantasy（虚幻字体）<br>可以将字体设置为这些大的分类<br>浏览器会自动选定指定的字体，并应用样式<br>一般讲大分类放在font-family 的最后一个 </p>
+<p>font-style 可以用来设置文字他的斜体<br>font-style:italic;  oblique 倾斜 // 文字斜体  没有区别</p>
+<p>大多数浏览器不会对倾斜和斜体作区分<br>font-weight:normal;bold;100；<br>改样式也可以设置100-900之间的9个值（但是用户计算机里面往往没有这多字体的级别 ，不能达到我们想要的效果 ）</p>
+<p>font-variant:small-caps;文本小型大写字母显示 ；<br>.p2{<br>在CSS中还为我们提供了一个样式　叫ｆｏｎｔ<br>font:italic small-caps bold 60px “微软雅黑”<br>使用font 没有顺序要求 可写可不写  但是大小 字体一定要写 大小在倒数第二个 字体倒数第一个 }<br> 有多少个样式， 要解析几次 /</p>
+<p> 行间距：<br> <style type="text/css"><br>我们只能通过设置行高来设置行间距<br>.p3{<br>line-height:40px;行高类似于单线本  线和线之间的距离  网页中的文字实际上也是写在看不见的行里  而文字会默认在行高中垂直居中<br>}<br>line-height 可以直接接受一个大小 也可以直接接受百分数 可以直接传一个正整数 则行高会设置成字体相应的倍数<br>对于单行文本  可以将行高设置为和父元素的高度一致 可以是单行文本在父元素中垂直居中<br>在font中也可以指定行高<br>font: 30px/50px  ;50px  值得就是行高<br> </style><br> </p><p class="p3"><br>  行间距设置<br> </p><br>盒子模型 框模型  box<br>css 处理页面，他认为欸每个元素都在一个不可见的盒子里<br>对网页的布局就是摆放盒子<br>内容区 content<br>内边距 padding<br>边框  border<br> 外边框  margin<br> 使用width来设置内容去的宽度  height来设置盒子内容取得高度<p></p>
+<p> 设置边框<br> background-color<br> border-width<br> border-color<br> border-style<br> 三个不能缺一个 </p>
+<p> 盒子可见大小要考虑到内容和边框<br> border-width: 上右下左的顺序  如果只有两个值 第一个给上下 第二个值应用给 左右<br> border color 也可以这么运用颜色<br> border style 默认没有边框  solid 实现 dotted 点状 dashed 虚线  double 双线<br> 大部分的浏览器中，边框的宽度和颜色都是有默认值的，而边框的样式都是none </p>
+<p> 在css中 一个border 就可以设置刚才那三个样式 ，并且没有顺序<br> 但是  一旦指定  四条边都一样 不能单独指定</p>
+<p> 但是 border -top border-bottom border- right border-left </p>
+<p> 内边距 padding 就是盒子的内容区与盒子边框的距离<br> 会影响盒子的可见框的大小<br> 元素的背景会延伸到内边距<br> 盒子可见框的宽度 border-left-width+padding-left+width+ width + padding-right + border-right </p>
+<p> padding:100px 200px 300 px  之类的会比较方便 </p>
+<p> 外边距 盒子与其他盒子之间的距离<br> 他不会影响可见框的大小  而是会影响到盒子的位位置<br> 盒子有四个方向的外边距<br>  margin-top<br>  margin-right<br>  margin-bottom<br>  margin-left<br>  由于页面中的元素一般都是向上 向左<br>  所以注意当我们设置上和左边的外边距的时候，可能会影响 自身盒子的位置<br>   但是下和右 会影响其他盒子的位置<br>   外边距也可以指定为一个负值<br>   margin-left=-100px;<br>   则元素会向反方向移动<br>  margin 还可以设置为 auto  一般设置给水平方向<br>  如果将 right left 设置为auto  水平居中<br>  外边距简写字符 margin 可以同时设置四个 </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/10/20/10-20-学习日志/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1635,135 +1785,6 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zhaofandong.github.io/2018/09/19/今日关于搭建hexo博客的标签和分类的心得/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sette">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sette's Page">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/09/19/今日关于搭建hexo博客的标签和分类的心得/" itemprop="url">今日关于搭建hexo博客的标签和分类的心得</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-19T20:05:58+08:00">
-                2018-09-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/09/19/今日关于搭建hexo博客的标签和分类的心得/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/09/19/今日关于搭建hexo博客的标签和分类的心得/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-              <font face="微软雅黑">今天忽然想到 如果每一篇文章发出来没有分类的话，看的人会看不到，因为生活的琐事很多不如来个分类或者来个标签。<br> 关于分类，我猜想，应该是由hexo的主题模板来控制的。因为我添加了tags之后，每篇新生成的文章都会自带tags： 让我填。但是，我省成了 categories,却没有这个属性。观察了nextT 主题，发现原因应该就出现在这个母版页上。<br>  <h4> 还有就是哦 tags: 之后呢 一定要加一个- 不然会报错吼</h4><br>  日后，会想办法更改。<br>  今天，也是很愉快的一天 :)<br>  接下来几天要完成暑假遗留的电子院项目，就偶尔写一些啦。<br>  <h4>晚安。 everyone. :)</h4><br></font>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1814,7 +1835,7 @@ font 可循三个属性 color face size --><br> <font color="red"> </font><br> &
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">23</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
