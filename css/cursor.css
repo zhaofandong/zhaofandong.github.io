@@ -1,0 +1,88 @@
+body {
+    cursor: none;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg, 
+        rgba(255, 182, 193, 0.85),    /* lightpink */
+        rgba(255, 192, 203, 0.85),    /* pink */
+        rgba(255, 218, 185, 0.85),    /* peachpuff */
+        rgba(255, 228, 225, 0.85),    /* mistyrose */
+        rgba(255, 240, 245, 0.85),    /* lavenderblush */
+        rgba(255, 182, 193, 0.85),    /* lightpink */
+        rgba(255, 192, 203, 0.85),    /* pink */
+        rgba(255, 218, 185, 0.85)     /* peachpuff */
+    );
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    animation: rainbow 6s linear infinite;
+    background-size: 200% 200%;
+    box-shadow: 0 0 15px rgba(255, 192, 203, 0.6);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.cursor-bubble {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 192, 203, 0.8);  /* pink */
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999998;
+    transform: translate(-50%, -50%);
+}
+
+.bubble-animate {
+    animation: bubbleEffect 0.4s ease-out forwards;
+}
+
+@keyframes bubbleEffect {
+    0% {
+        transform: translate(-50%, -50%) scale(0.5) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 150%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+a, button, input[type="submit"], .clickable {
+    cursor: none !important;
+}
+
+a:hover, button:hover, input[type="submit"]:hover, .clickable:hover {
+    cursor: none !important;
+}
+
+.custom-cursor.hover {
+    transform: translate(-50%, -50%) scale(1.8);
+    background: linear-gradient(45deg, 
+        rgba(255, 192, 203, 0.95),    /* pink */
+        rgba(255, 182, 193, 0.95),    /* lightpink */
+        rgba(255, 218, 185, 0.95),    /* peachpuff */
+        rgba(255, 228, 225, 0.95),    /* mistyrose */
+        rgba(255, 240, 245, 0.95),    /* lavenderblush */
+        rgba(255, 192, 203, 0.95),    /* pink */
+        rgba(255, 182, 193, 0.95),    /* lightpink */
+        rgba(255, 218, 185, 0.95)     /* peachpuff */
+    );
+    box-shadow: 0 0 20px rgba(255, 192, 203, 0.8);
+} 
