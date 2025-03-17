@@ -1,8 +1,10 @@
+/* 基础样式 */
 .post {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .divider {
@@ -13,90 +15,80 @@
     margin-bottom: 5%;
 }
 
-@media (min-width: 10px) and (max-width: 500px) {
-    .post {
-        margin: 10%;
-    }
+.post-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+    margin-top: 5%;
+}
 
-    .breadcrumb {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
+.post-content {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
 
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
     .post-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10%;
+        width: 100%;
+        padding: 0 15px;
     }
 
     .post-title {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .post-meta {
-        font-style: italic;
+        font-size: 24px;
     }
 
     .toc {
         display: none;
     }
 
-    .license {
-        display: contents;
-        align-items: center;
-        justify-content: center;
-        font-size: small;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 1920px) {
-    .breadcrumb {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
-    .post-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 800px;
-        margin-top: 5%;
-    }
-
-    .post-title {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .toc {
-        max-width: 15%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin-left: 1%;
-        margin-top: 10%;
-        text-overflow: ellipsis;
-    }
-
-    .license {
-        display: contents;
-        align-items: center;
-        justify-content: center;
-        font-size: small;
+    .post-content {
+        font-size: 16px;
     }
 
     #gitalk-container {
-        width: 800px;
-        margin-bottom: 15px;
+        width: 100%;
+        padding: 0 15px;
     }
+}
+
+/* 手机端适配 */
+@media screen and (max-width: 480px) {
+    .post-body {
+        padding: 0 10px;
+        margin-top: 10%;
+    }
+
+    .post-title {
+        font-size: 20px;
+    }
+
+    .post-content {
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+}
+
+/* 文章容器基础样式 */
+.post-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }

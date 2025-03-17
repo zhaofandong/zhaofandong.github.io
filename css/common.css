@@ -15,7 +15,56 @@ p {
     -ms-hyphens: auto;
     hyphens: auto;
 }
-
+/* 基础响应式设置 */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* 响应式容器 */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* 响应式导航 */
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 平板设备 */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+    
+    .nav-bar {
+      flex-direction: column;
+    }
+  }
+  
+  /* 手机设备 */
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 10px;
+    }
+    
+    body {
+      font-size: 14px;
+    }
+  }
 @media (prefers-color-scheme: dark) {
     html, img, .hljs { 
         filter: invert(1) hue-rotate(180deg);
@@ -96,4 +145,35 @@ a:active {
     .footer a:hover {
         color: #fff;
     }
+}
+
+pre, code {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  pre, code {
+    font-size: 14px;
+  }
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .nav-bar {
+    flex-direction: column;
+  }
+  
+  .post-content {
+    padding: 10px;
+  }
+  
+  .article {
+    width: 100%;
+  }
 }
