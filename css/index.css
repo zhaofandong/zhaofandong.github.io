@@ -174,3 +174,14 @@
         background: #666;
     }
 }
+
+/* 针对手机屏幕的样式 */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+}
