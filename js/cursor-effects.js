@@ -3,6 +3,24 @@ console.log('Cursor effects script loaded');
 document.addEventListener('DOMContentLoaded', () => {
     console.log('初始化光标效果');
     
+    // 检测是否为移动设备
+    function isMobileDevice() {
+        return (window.innerWidth <= 768) || 
+               navigator.userAgent.match(/Android/i) ||
+               navigator.userAgent.match(/webOS/i) ||
+               navigator.userAgent.match(/iPhone/i) ||
+               navigator.userAgent.match(/iPad/i) ||
+               navigator.userAgent.match(/iPod/i) ||
+               navigator.userAgent.match(/BlackBerry/i) ||
+               navigator.userAgent.match(/Windows Phone/i);
+    }
+    
+    // 如果是移动设备，不初始化鼠标特效
+    if (isMobileDevice()) {
+        console.log('移动设备检测到，禁用鼠标特效');
+        return;
+    }
+    
     // 创建自定义光标
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';

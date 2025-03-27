@@ -1,5 +1,31 @@
-body {
-    cursor: none;
+/* 默认光标设置 - 仅针对非移动设备 */
+@media (min-width: 769px) and (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    a, button, input[type="submit"], .clickable {
+        cursor: none !important;
+    }
+
+    a:hover, button:hover, input[type="submit"]:hover, .clickable:hover {
+        cursor: none !important;
+    }
+}
+
+/* 移动设备恢复默认光标 */
+@media (max-width: 768px), (pointer: coarse) {
+    body {
+        cursor: auto !important;
+    }
+    
+    a, button, input[type="submit"], .clickable {
+        cursor: pointer !important;
+    }
+    
+    .custom-cursor, .cursor-bubble, .cursor-dot, .cursor-dot-outline {
+        display: none !important;
+    }
 }
 
 .custom-cursor {
@@ -62,14 +88,6 @@ body {
     100% {
         background-position: 0% 50%;
     }
-}
-
-a, button, input[type="submit"], .clickable {
-    cursor: none !important;
-}
-
-a:hover, button:hover, input[type="submit"]:hover, .clickable:hover {
-    cursor: none !important;
 }
 
 .custom-cursor.hover {
@@ -137,14 +155,6 @@ a:hover ~ .cursor-dot-outline,
 button:hover ~ .cursor-dot-outline {
     transform: translate(-50%, -50%) scale(0.75);
     border-color: var(--primary-color);
-}
-
-/* Performance Optimizations */
-@media (pointer: coarse) {
-    .cursor-dot,
-    .cursor-dot-outline {
-        display: none;
-    }
 }
 
 @supports not (will-change: transform) {
