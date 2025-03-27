@@ -1,3 +1,80 @@
+/* Responsive Breakpoints */
+:root {
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1280px;
+}
+
+/* Mobile First Design */
+@media (max-width: 640px) {
+    :root {
+        --container-padding: var(--space-xs);
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        --font-size-lg: 1rem;
+        --font-size-xl: 1.125rem;
+    }
+
+    .nav-bar {
+        padding: var(--space-xs);
+        margin-bottom: var(--space-lg);
+    }
+
+    .tag-cloud {
+        margin: var(--space-lg) 0;
+        padding: var(--space-sm);
+    }
+
+    .footer {
+        padding: var(--space-md);
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    :root {
+        --container-padding: var(--space-sm);
+    }
+
+    .nav-bar {
+        margin-bottom: var(--space-lg);
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .container {
+        padding: 0 var(--space-lg);
+    }
+
+    .post:hover,
+    .archive-item:hover {
+        transform: translateY(-4px);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-bar,
+    .tag-cloud,
+    .footer,
+    .cursor-dot,
+    .cursor-dot-outline {
+        display: none;
+    }
+
+    body {
+        background: none;
+        color: #000;
+    }
+
+    a {
+        text-decoration: underline;
+        color: #000;
+    }
+}
+
 /* 基础样式 */
 .container {
   width: 80%;
@@ -8,13 +85,13 @@
 @media (max-width: 768px) {
   .container {
     width: 90%;
+    padding: 15px;
   }
   .nav-bar {
-    flex-direction: column;
-    align-items: center;
+    /* 使用common.css中的定义 */
   }
   .nav-bar-item-title {
-    margin: 5px 0;
+    /* 使用common.css中的定义 */
   }
   .post-content {
     padding: 0 15px;
@@ -31,7 +108,7 @@
     font-size: 14px;
   }
   .nav-bar {
-    padding: 10px 0;
+    /* 使用common.css中的定义 */
   }
   .post-content {
     padding: 0 10px;

@@ -1,47 +1,152 @@
-/* 基础样式 */
-.archive-page, .archive {
-    width: 100%;
+/* Archive Page */
+.archive {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f9fa;  /* 添加柔和的背景色 */
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--space-lg) var(--container-padding);
 }
 
-.archive-list, .archive-container {
+/* Archive Item */
+.archive-item {
+    width: 100%;
+    margin-bottom: var(--space-lg);
+    padding: var(--space-md);
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-fast);
+    animation: slideUp var(--transition-normal);
+}
+
+.archive-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Article Preview */
+.article-preview {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.article-preview-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.article-preview-top-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+    flex: 1;
+}
+
+.article-preview-top-title:hover {
+    color: var(--primary-color);
+}
+
+.article-preview-top-date {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+/* Page Switcher */
+.page-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: var(--space-xl);
+    gap: var(--space-md);
+}
+
+.page-switcher a {
+    padding: var(--space-xs) var(--space-sm);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    border: 1px solid var(--bg-tertiary);
+}
+
+.page-switcher a:hover {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background: var(--bg-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .archive-item {
+        margin-bottom: var(--space-md);
+        padding: var(--space-sm);
+    }
+
+    .article-preview-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+    }
+
+    .article-preview-top-title {
+        font-size: var(--font-size-md);
+    }
+
+    .page-switcher {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+}
+
+/* 响应式设计 */
+@media (min-width: 501px) and (max-width: 1920px) {
+    .archive {
+        margin: 5%;
+    }
+
+    .article-preview {
+        padding-top: 5%;
+        width: 700px;
+    }
+}
+
+/* 大屏幕适配 */
+@media screen and (min-width: 1920px) {
+    .archive {
+        max-width: 1000px;
+    }
+}
+
+/* 基础样式 */
+.archive-page, .archive {
     width: 100%;
     max-width: 800px;
-    padding: 30px;
     margin: 0 auto;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    background-color: white;  /* 内容区白色背景 */
-    border-radius: 15px;      /* 圆角边框 */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);  /* 柔和的阴影 */
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
 }
 
 .archive-item {
-    width: 100%;
     margin: 15px 0;
     padding: 15px;
-    overflow: hidden;
-    border-bottom: 1px solid #eee;  /* 添加分隔线 */
-    transition: all 0.3s ease;      /* 添加过渡效果 */
+    border-bottom: 1px solid #eee;
 }
 
 .archive-item:hover {
     transform: translateX(5px);  /* 鼠标悬停时的位移效果 */
     background-color: #f8f9fa;  /* 鼠标悬停时的背景色 */
     border-radius: 8px;         /* 圆角效果 */
-}
-
-.article-preview {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    padding: 20px;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
 }
 
 /* 删除所有其他地方的头像样式，只保留这一个基础样式定义 */
@@ -65,79 +170,40 @@
     border: 3px solid white;
 }
 
-/* 移动端适配 */
-@media screen and (max-width: 375px) {
-    .avatar {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 /* 导航栏样式 */
 .nav-bar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px 0;
-    padding: 10px;
+    /* 使用common.css中的定义 */
 }
 
 .nav-bar-item-title {
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
+    /* 使用common.css中的定义 */
 }
 
 .nav-bar-item-title:hover {
-    color: #666;
-    transform: translateY(-2px);
+    /* 使用common.css中的定义 */
 }
 
-/* 平板和桌面端 */
 @media screen and (min-width: 376px) {
     .home {
         padding: 30px;
     }
 
     .nav-bar {
-        gap: 20px;
+        /* 使用common.css中的定义 */
     }
 
     .nav-bar-item-title {
-        font-size: 16px;
+        /* 使用common.css中的定义 */
     }
 }
 
-/* 移动端适配 */
 @media (max-width: 500px) {
     .nav-bar {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr); /* 一行5个 */
-        gap: 8px;
-        width: 100%;
-        padding: 5px;
-        margin: 10px 0;
+        /* 使用common.css中的定义 */
     }
     
     .nav-bar-item-title {
-        font-size: min(3.5vw, 14px); /* 自动调整字体大小，最大14px */
-        padding: 4px 6px;
-        text-align: center;
-        text-decoration: underline; /* 恢复下划线 */
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        color: #333;
-        background-color: transparent; /* 去掉背景色 */
-        border-radius: 0; /* 去掉圆角 */
-    }
-
-    .nav-bar-item-title:hover {
-        color: #666;
-        transform: translateY(-2px);
+        /* 使用common.css中的定义 */
     }
 }
 
@@ -147,42 +213,16 @@
     }
 
     .nav-bar {
-        margin-top: 20px;
-        display: flex;
-        place-items: center;
-        gap: 25px;
+        /* 使用common.css中的定义 */
     }
     
     .nav-bar-item-title {
-        font-size: 20px;
-        font-weight: bold;
-        text-decoration: underline;
+        /* 使用common.css中的定义 */
     }
 
     .article-preview {
         padding-top: 5%;
         width: 700px;
-    }
-    
-    .article-preview-top {
-        display: flex;
-        gap: 20px;
-        align-items: baseline;
-    }
-
-    .article-preview-top-date {
-        font-size: 15px;
-        font-style: italic;
-    }
-
-    .article-preview-top-title {
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .page-switcher {
-        display: flex;
-        gap: 10px;
     }
 }
 
@@ -197,7 +237,6 @@
 }
 
 .tag-cloud a {
-    display: inline-block;
     padding: 3px 8px;
     font-size: 11px;  /* 减小默认字体大小 */
     color: #666;
@@ -215,6 +254,13 @@
 
 /* 移动端适配 */
 @media screen and (max-width: 375px) {
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+}
+/* 移动端适配 */
+@media screen and (max-width: 375px) {
     .tag-cloud {
         gap: 6px;
     }
@@ -224,3 +270,104 @@
         padding: 2px 6px;
     }
 }
+/* 大屏幕适配 */
+@media screen and (min-width: 1920px) {
+    .archive-page,
+    .archive {
+        max-width: 1000px;
+    }
+
+    .archive-title {
+        font-size: 4em;
+        font-weight: bold;
+    }
+
+    .archive-meta {
+        font-size: 2em;
+        font-style: italic;
+    }
+}
+
+.archive-item {
+    margin-bottom: var(--space-xl);
+    padding: var(--space-md);
+    background: #fff;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform var(--transition-fast);
+    width: 100%;
+    max-width: 800px;
+}
+
+.archive-item:hover {
+    transform: translateY(-2px);
+}
+
+.article-preview-top-title {
+    font-size: 1.8rem;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.article-preview-top-title:hover {
+    color: var(--primary-color);
+}
+
+.article-preview-top-date {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.article-preview {
+    line-height: 1.8;
+    margin: var(--space-sm) 0;
+    color: var(--text-secondary);
+}
+
+.page-switcher {
+    margin-top: var(--space-md);
+}
+
+.page-switcher a {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.page-switcher a:hover {
+    color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+    .archive-item {
+        background: #2a2a2a;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+
+    .article-preview-top-title {
+        color: #e0e0e0;
+    }
+
+    .article-preview-top-title:hover {
+        color: #fff;
+    }
+
+    .article-preview-top-date {
+        color: #999;
+    }
+
+    .page-switcher a {
+        background: #444;
+    }
+
+    .page-switcher a:hover {
+        background: #666;
+    }
+}
+

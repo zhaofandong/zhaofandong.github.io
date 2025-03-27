@@ -3,61 +3,140 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
-    padding: 20px;
+    width: 100%;
+    max-width: var(--container-width);
     margin: 0 auto;
+    padding: var(--space-lg) var(--container-padding);
     box-sizing: border-box;
+    background: var(--bg-primary);
+}
+
+.page .avatar {
+    width: clamp(80px, 15vw, 120px);
+    height: clamp(80px, 15vw, 120px);
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+    margin-bottom: var(--space-lg);
+}
+
+.page .avatar:hover {
+    transform: scale(1.05);
+}
+
+.page .nav-bar {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto var(--space-xl);
+    padding: var(--space-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
 }
 
 .profile {
     display: flex;
-    gap: 10px;
+    gap: var(--space-sm);
 }
 
 .profile-icon {
-    font-size: 20px;
+    font-size: var(--font-size-lg);
 }
 
 .page-body {
     display: block;
-    margin-top: 20px;
+    margin-top: var(--space-lg);
     width: 100%;
-    text-align: center;
+    max-width: 800px;
 }
 
 .page-title {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+    text-align: center;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .page-meta {
-    font-size: 0.9em;
-    color: #888;
-    margin-bottom: 20px;
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+    text-align: center;
 }
 
 .page-content {
     display: block;
     width: 100%;
-    max-width: 100%;
-    line-height: 1.6;
-    font-size: 1em;
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: var(--font-size-md);
     text-align: left;
-    padding: 0 10px;
+    padding: 0 var(--space-md);
     box-sizing: border-box;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    color: var(--text-primary);
+}
+
+.page-content h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--bg-tertiary);
+    padding-bottom: var(--space-xs);
+}
+
+.page-content h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.page-content p {
+    margin-bottom: var(--space-md);
+}
+
+.page-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.page-content a:hover {
+    text-decoration: underline;
+    color: var(--primary-dark);
+}
+
+.page-content ul, .page-content ol {
+    margin-bottom: var(--space-md);
+    padding-left: var(--space-lg);
+}
+
+.page-content li {
+    margin-bottom: var(--space-xs);
+}
+
+#gitalk-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: var(--space-xl);
 }
 
 /* 移动端适配 */
 @media (max-width: 500px) {
     .page {
         margin: 10px;
-    }
-
-    .breadcrumb {
-        position: static;
-        margin: 10px 0;
     }
 
     .page-body {
@@ -77,14 +156,6 @@
 
 /* 平板和桌面端 */
 @media (min-width: 501px) {
-    .breadcrumb {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-
     .page-body {
         width: 55%;
         margin-top: 5%;
@@ -106,20 +177,33 @@
 /* 响应式设计 */
 @media (max-width: 768px) {
     .page-title {
-        font-size: 1.5em;
+        font-size: var(--font-size-xl);
     }
-
+    
     .page-content {
-        font-size: 0.9em;
+        padding: 0 var(--space-sm);
+    }
+    
+    .page-content h2 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .page-content h3 {
+        font-size: var(--font-size-md);
     }
 }
 
 @media (max-width: 480px) {
-    .page-title {
-        font-size: 1.2em;
+    .page {
+        padding: var(--space-md) var(--container-padding);
     }
-
+    
+    .page-title {
+        font-size: var(--font-size-lg);
+    }
+    
     .page-content {
-        font-size: 0.8em;
+        font-size: var(--font-size-sm);
+        padding: 0 var(--space-xs);
     }
 }

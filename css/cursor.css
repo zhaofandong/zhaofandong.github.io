@@ -85,4 +85,71 @@ a:hover, button:hover, input[type="submit"]:hover, .clickable:hover {
         rgba(255, 218, 185, 0.95)     /* peachpuff */
     );
     box-shadow: 0 0 20px rgba(255, 192, 203, 0.8);
+}
+
+/* Cursor Effects */
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: var(--radius-full);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: var(--z-tooltip);
+    will-change: transform;
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+}
+
+.cursor-dot-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(37, 99, 235, 0.1);
+    border: 2px solid var(--primary-light);
+}
+
+/* Active States */
+.cursor-dot.active {
+    opacity: 0.75;
+    transform: translate(-50%, -50%) scale(0.75);
+}
+
+.cursor-dot-outline.active {
+    opacity: 0.25;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+/* Hover States */
+a:hover ~ .cursor-dot,
+button:hover ~ .cursor-dot {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: var(--primary-light);
+}
+
+a:hover ~ .cursor-dot-outline,
+button:hover ~ .cursor-dot-outline {
+    transform: translate(-50%, -50%) scale(0.75);
+    border-color: var(--primary-color);
+}
+
+/* Performance Optimizations */
+@media (pointer: coarse) {
+    .cursor-dot,
+    .cursor-dot-outline {
+        display: none;
+    }
+}
+
+@supports not (will-change: transform) {
+    .cursor-dot,
+    .cursor-dot-outline {
+        transition: none;
+    }
 } 
