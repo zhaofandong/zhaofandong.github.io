@@ -109,7 +109,9 @@ theme: oliver
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/zhaofandong/zhaofandong.github.io.git
+  branch: gh-pages
 
 # 我们强烈建议你将所有的主题配置集中在一处。 
 #如果你不得不在多处配置你的主题，
