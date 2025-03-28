@@ -11,6 +11,11 @@ author: Cyouhanki
 language: zh-CN
 timezone: 'Asia/Tokyo'
 
+# 在head标签中插入自定义代码
+inject:
+  head:
+    - <meta name="theme-color" content="#ffffff">
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://zhaofandong.github.io 
@@ -106,12 +111,24 @@ ignore:
 ##theme_config 主题的配置文件。 在这里放置的配置会覆盖主题目录下的 _config.yml 中的配置
 theme: oliver
 
+# 主题配置覆盖
+theme_config:
+  avatar: /images/avatar.jpg
+  timezone: Asia/Japan
+  menu:
+    首页: /
+    ENG: /EG
+    日本語: /JP
+    归档: /archives
+    关于: /about
+  copyright: © 2025 Cyouhanki With Cursor and Hexo and Oliver
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: https://github.com/zhaofandong/zhaofandong.github.io.git
-  branch: gh-pages
+  branch: main
 
 # 我们强烈建议你将所有的主题配置集中在一处。 
 #如果你不得不在多处配置你的主题，
